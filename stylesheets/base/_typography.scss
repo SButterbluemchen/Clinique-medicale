@@ -3,5 +3,30 @@
  */
 body {
   color: $text-color;
-  font: normal 125% / 1.4 $text-font-stack;
+  font: normal 100% / 1.4em $text-font-stack;
 }
+
+h1, h2, h3, h4 {
+  font-family: $heading-font-stack;
+  color: $primary-color;
+  line-height: 1.2;
+  text-align: center;
+  margin: 0em;
+}
+
+h1 {
+  @include headingstyle(bold, h1, uppercase);
+}
+
+h2 {
+  @include headingstyle(bold, h2, uppercase);
+}
+
+h3 {
+  @include headingstyle(bold, h3, uppercase);
+}
+
+h4 {
+  @include headingstyle(bold, h4)
+}
+

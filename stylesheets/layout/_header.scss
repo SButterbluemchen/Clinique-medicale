@@ -1,3 +1,22 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+.contact-bar {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.nav-bar {
+  background: $primary-color;
+  text-align: center;
+  li {
+    font-weight: map-get($map: $fontweights, $key: semi-bold);
+    a {
+      color: $secondary-color;
+      &:hover {
+        @include hover($third-color, $primary-color);
+      }
+    }
+  }
+}

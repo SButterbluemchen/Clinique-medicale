@@ -1,3 +1,21 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+%btn {
+  color: white;
+  background: $third-color;
+  padding: 0.7em 3em;
+  margin: 5em;
+}
+
+.btn--filled {
+  @extend %btn;
+  &:hover {
+    @include hover($secondary-color, rgba($third-color, 0.7));
+  }
+}
+
+.btn--empty {
+  @extend %btn;
+  @include hover($third-color, $secondary-color);
+}

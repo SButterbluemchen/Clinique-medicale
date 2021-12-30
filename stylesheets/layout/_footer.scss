@@ -1,3 +1,16 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+footer {
+  background: $primary-color;
+  color: $secondary-color;
+  margin: auto;
+  padding: 2em;
+  article {
+    width: 100%;
+    text-align: center;
+  }
+  p {
+    margin: 0.2em;
+  }
+}

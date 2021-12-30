@@ -2,6 +2,19 @@
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
 
+@mixin headingstyle($weight, $size, $transform:null) {
+  font-weight: map-get($map: $fontweights, $key: $weight);
+  font-size: map-get($map: $fontsizes, $key: $size);
+  text-transform: $transform;
+}
+
+@mixin hover($color, $background-color) {
+  color: $color;
+  background: $background-color;
+  transform: scale(105%);
+  transition-duration: 0.7s;
+}
+
 /// Event wrapper
 /// @author Harry Roberts
 /// @param {Bool} $self [false] - Whether or not to include current selector

@@ -2,52 +2,30 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
+// fonts
+$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$heading-font-stack: 'Poppins', sans-serif;
 
+// font size
+$fontsizes: (
+    "h1": 3em,
+    "h2": 2.5em,
+    "h3": 1.7em,
+    "h4": 1.2em
+  );
+$fontweights: (
+    "bold": 600,
+    "semi-bold": 500,
+    "normal": 400,
+    "light": 200
+  );
 
-
-
-/// Regular font family
-/// @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
-
-/// Code (monospace) font family
-/// @type List
-$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
-
-
-
-
-
-/// Copy text color
-/// @type Color
-$text-color: rgb(34, 34, 34) !default;
-
-/// Main brand color
-/// @type Color
-$brand-color: rgb(229, 0, 80) !default;
-
-/// Light grey
-/// @type Color
-$light-grey: rgb(237, 237, 237) !default;
-
-/// Medium grey
-/// @type Color
-$mid-grey: rgb(153, 153, 153) !default;
-
-/// Dark grey
-/// @type Color
-$dark-grey: rgb(68, 68, 68) !default;
-
-
-
-
-
-/// Container's maximum width
-/// @type Length
-$max-width: 1180px !default;
-
-
-
+// colors
+$primary-color: #0063A0;
+$secondary-color: #ffffff;
+$third-color: #01C5A2;
+$fourth-color: #F5FDFC;
+$text-color: #666666;
 
 
 /// Breakpoints map
@@ -58,14 +36,3 @@ $breakpoints: (
   'medium': 768px,
   'large': 1024px,
 ) !default;
-
-
-
-
-
-
-/// Relative or absolute URL where all assets are served from
-/// @type String
-/// @example scss - When using a CDN
-///   $base-url: 'http://cdn.example.com/assets/';
-$base-url: '/assets/' !default;
