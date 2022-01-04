@@ -25,11 +25,11 @@ html {
  * Basic styles for links
  */
 a {
-  color: $brand-color;
   text-decoration: none;
+  color: $text-color;
+}
 
-  @include on-event {
-    color: $text-color;
-    text-decoration: underline;
-  }
+.wrapper {
+  margin: 2em;
+  justify-content: center;
 }
