@@ -388,11 +388,6 @@ a {
 }
 
 .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin: 2em;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -522,13 +517,42 @@ footer {
   padding: 2em;
 }
 
-footer article {
-  width: 100%;
-  text-align: center;
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-footer p {
-  margin: 0.2em;
+.footer-content article {
+  width: 25em;
+  text-align: left;
+}
+
+.footer-content h4 {
+  color: #ffffff;
+  text-align: left;
+  padding: 0.5em 0em;
+  text-transform: uppercase;
+}
+
+.footer-content p {
+  margin: 0.5em 0em;
+  line-height: 1.8em;
+}
+
+.footer-content p a {
+  text-decoration: underline;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.footer-content figure img {
+  max-width: 20em;
 }
 
 .btn--filled, .btn--empty {
@@ -587,26 +611,67 @@ footer p {
   margin-left: 2em;
 }
 
-.home-image-container {
+.home-image-wrapper {
   background: #F5FDFC;
-  padding: 2em;
   text-align: center;
-}
-
-.home-image-container h4 {
-  background: rgba(255, 255, 255, 0.6);
   padding: 2em;
 }
 
-.home-image-container p {
-  color: #0063A0;
+.home-image-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(13em, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(13em, 1fr));
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 1em;
 }
 
 .home-image-container li {
   list-style: none;
+  border: 1px solid red;
+}
+
+.home-image-container li h4 {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 2em;
+}
+
+.home-image-container li p {
+  color: #0063A0;
+}
+
+.home-image-container li figure, .home-image-container li img {
+  max-width: 15vw;
 }
 
 .home-team-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2em;
   text-align: center;
+}
+
+.home-team-container li {
+  list-style: none;
+  border: 1px solid red;
+}
+
+.home-team-container li h5 {
+  font-size: 1.4em;
+  margin-bottom: 0.5em;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+.home-team-container li p {
+  max-width: 10em;
+  margin: auto;
 }
 /*# sourceMappingURL=main.css.map */

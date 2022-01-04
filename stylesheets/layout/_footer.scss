@@ -6,11 +6,33 @@ footer {
   color: $secondary-color;
   margin: auto;
   padding: 2em;
+}
+
+.footer-content {
+  display: flex;
+  @include flex-wrap(wrap, space-around, center);
   article {
-    width: 100%;
-    text-align: center;
+    width: 25em;
+    text-align: left;
+  }
+  h4 {
+    color: $secondary-color;
+    text-align: left;
+    padding: 0.5em 0em;
+    text-transform: uppercase;
   }
   p {
-    margin: 0.2em;
+    margin: 0.5em 0em;
+    line-height: 1.8em;
+    a {
+      text-decoration: underline;
+      color: $secondary-color;
+      cursor: pointer;
+    }
+  }
+  figure {
+    img {
+      max-width: 20em;
+    }
   }
 }

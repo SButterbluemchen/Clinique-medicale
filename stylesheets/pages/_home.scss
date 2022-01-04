@@ -30,22 +30,48 @@
     }
 }
 
-.home-image-container {
+.home-image-wrapper {
   background: $fourth-color;
-  padding: 2em;
   text-align: center;
-  h4 {
-    background: rgba($secondary-color, 0.6);
-    padding: 2em;
-  }
-  p {
-    color: $primary-color;
-  }
+  padding: 2em;
+}
+
+.home-image-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13em, 1fr));
+  justify-content: space-around;
+  gap: 1em;
   li {
     list-style: none;
+    border: 1px solid red;
+    h4 {
+      background: rgba($secondary-color, 0.6);
+      padding: 2em;
+    }
+    p {
+      color: $primary-color;
+    }
+    figure, img {
+      max-width: 15vw;
+    }
   }
 }
 
 .home-team-container {
+  @include flex-wrap(wrap, center);
+  gap: 2em;
   text-align: center;
+  li {
+    list-style: none;
+    border: 1px solid red;
+    h5 {
+      font-size: 1.4em;
+      margin-bottom: 0.5em;
+      @include headingstyle(normal, h4);
+    }
+    p {
+      max-width: 10em;
+      margin: auto;
+    }
+  };
 }
