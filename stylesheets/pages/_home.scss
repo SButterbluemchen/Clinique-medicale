@@ -3,8 +3,10 @@
 // -----------------------------------------------------------------------------
 
 .home-main-container {
-  background: url() 100% fixed;
+  background: url(../img/home-hero-image.webp) 100% no-repeat fixed;
+  background-size: 100%;
   text-align: center;
+  padding: 1.5em;
   h3 {
     margin: 0.5em 0em;
   }
@@ -14,45 +16,65 @@
     margin: 2em auto;
   }
 }
+
 .home-faq-container {
-  gap: 2em;
-  article {
-    margin: 0;
+  @include flex-wrap(wrap, space-evenly);
+  h2 {
+    padding: 0.5em;
   }
-  li::marker {
-    color: $primary-color;
+  article {
+    max-width: 30em;
+    margin: 0;
+    > ul > li {
+      margin-top: 2em;
+      &::marker {
+        color: $primary-color;
+      }
+    }
+    h4 {
+      text-align: left;
+    }
   }
 }
 
 .list-inside {
-    li {
-      margin-left: 2em;
-    }
+  li {
+    margin-left: 2em;
+  }
 }
 
 .home-image-wrapper {
   background: $fourth-color;
   text-align: center;
-  padding: 2em;
+  padding: 4em;
+  margin: 0em;
 }
 
 .home-image-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(13em, 1fr));
   justify-content: space-around;
-  gap: 1em;
+  gap: 2em;
   li {
     list-style: none;
-    border: 1px solid red;
+    position: relative;
+
     h4 {
       background: rgba($secondary-color, 0.6);
-      padding: 2em;
+      padding: 1.2em;
+      position: absolute;
+      top: 10em;
+      width: 100%;
     }
     p {
       color: $primary-color;
     }
-    figure, img {
-      max-width: 15vw;
+    img,
+    figure {
+      height: 469px;
+      object-fit: cover;
+      object-position: 50% 50%;
+      width: 100%;
     }
   }
 }
@@ -60,10 +82,10 @@
 .home-team-container {
   @include flex-wrap(wrap, center);
   gap: 2em;
+  padding-top: 2em;
   text-align: center;
   li {
     list-style: none;
-    border: 1px solid red;
     h5 {
       font-size: 1.4em;
       margin-bottom: 0.5em;
@@ -73,5 +95,5 @@
       max-width: 10em;
       margin: auto;
     }
-  };
+  }
 }
