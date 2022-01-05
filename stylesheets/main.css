@@ -605,13 +605,16 @@ footer {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 5em;
+          column-gap: 5em;
 }
 
 .home-faq-container h2 {
   padding: 0.5em;
+  min-width: 95%;
 }
 
 .home-faq-container article {
