@@ -1,10 +1,13 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the header of the site/application.
-// -----------------------------------------------------------------------------
+// nav {
+//   position: sticky;
+//   top: 0px;
+// }
+
 .contact-bar {
   display: flex;
   flex-direction: column;
   max-width: 100%;
+  background: $secondary-color;
 }
 
 .nav-bar {

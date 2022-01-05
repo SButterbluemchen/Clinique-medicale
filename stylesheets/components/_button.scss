@@ -5,13 +5,14 @@
   color: white;
   background: $third-color;
   padding: 0.7em 3em;
-  margin: 5em;
+  margin: 1em;
+  display: inline-block;
 }
 
 .btn--filled {
   @extend %btn;
   &:hover {
-    @include hover($secondary-color, rgba($third-color, 0.7));
+    @include hover($secondary-color, #6dd8c5);
   }
 }
 
