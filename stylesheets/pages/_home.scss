@@ -18,9 +18,11 @@
 }
 
 .home-faq-container {
-  @include flex-wrap(wrap, space-evenly);
+  @include flex-wrap(wrap, center);
+  column-gap: 5em;
   h2 {
     padding: 0.5em;
+    min-width: 95%;
   }
   article {
     max-width: 30em;
