@@ -711,4 +711,60 @@ footer {
   max-width: 10em;
   margin: auto;
 }
+
+@media screen and (min-width: 400px) {
+  .members {
+    max-width: 80%;
+    margin: auto;
+  }
+}
+
+.members-intro {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(15em, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2em 0em;
+}
+
+.members-intro figure {
+  width: 95%;
+  height: 20em;
+  margin-bottom: 2em;
+}
+
+.members-intro figure img {
+  width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.members-intro article {
+  max-width: 95%;
+}
+
+@media screen and (min-width: 400px) {
+  .members-intro article h3 {
+    text-align: left;
+  }
+}
+
+.members-disease > * {
+  line-height: 0.2em;
+}
+
+.members-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 /*# sourceMappingURL=main.css.map */
