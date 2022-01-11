@@ -384,7 +384,7 @@ html {
  */
 a {
   text-decoration: none;
-  color: #666666;
+  color: #3c4549;
 }
 
 .wrapper {
@@ -398,38 +398,38 @@ a {
  * Basic typography style for copy text
  */
 body {
-  color: #666666;
+  color: #3c4549;
   font: normal 100%/1.4em "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 h1, h2, h3, h4 {
   font-family: "Poppins", sans-serif;
-  color: #0063A0;
+  color: #3c4549;
   line-height: 1.2;
   text-align: center;
   margin: 0em;
 }
 
 h1 {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 3em;
   text-transform: uppercase;
 }
 
 h2 {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 2.5em;
   text-transform: uppercase;
 }
 
 h3 {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.7em;
   text-transform: uppercase;
 }
 
 h4 {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.2em;
 }
 
@@ -495,7 +495,7 @@ h4 {
 }
 
 .nav-bar li {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .nav-bar li a {
@@ -503,12 +503,12 @@ h4 {
 }
 
 .nav-bar li a:hover {
-  color: #01C5A2;
+  color: #3c4549;
   background: #0063A0;
-  -webkit-transform: scale(105%);
-          transform: scale(105%);
-  -webkit-transition-duration: 0.7s;
-          transition-duration: 0.7s;
+  -webkit-transform: scale(104%);
+          transform: scale(104%);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 footer {
@@ -556,30 +556,21 @@ footer {
   max-width: 20em;
 }
 
-.btn--filled, .btn--empty {
-  color: white;
-  background: #01C5A2;
+.btn--empty {
+  color: #0063A0;
+  border: 0.1em solid #0063A0;
   padding: 0.7em 3em;
   margin: 1em;
   display: inline-block;
 }
 
-.btn--filled:hover {
-  color: #ffffff;
-  background: #6dd8c5;
-  -webkit-transform: scale(105%);
-          transform: scale(105%);
-  -webkit-transition-duration: 0.7s;
-          transition-duration: 0.7s;
-}
-
-.btn--empty {
-  color: #01C5A2;
-  background: #ffffff;
-  -webkit-transform: scale(105%);
-          transform: scale(105%);
-  -webkit-transition-duration: 0.7s;
-          transition-duration: 0.7s;
+.btn--empty:hover {
+  color: white;
+  background: #0063A0;
+  -webkit-transform: scale(104%);
+          transform: scale(104%);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 .home-main-container {
@@ -595,7 +586,6 @@ footer {
 
 .home-main-container div {
   line-height: 1em;
-  color: #0063A0;
   margin: 2em auto;
 }
 
@@ -626,10 +616,6 @@ footer {
   margin-top: 2em;
 }
 
-.home-faq-container article > ul > li::marker {
-  color: #0063A0;
-}
-
 .home-faq-container article h4 {
   text-align: left;
 }
@@ -639,7 +625,6 @@ footer {
 }
 
 .home-image-wrapper {
-  background: #F5FDFC;
   text-align: center;
   padding: 4em;
   margin: 0em;
@@ -668,18 +653,18 @@ footer {
   width: 100%;
 }
 
-.home-image-container li p {
-  color: #0063A0;
-}
-
-.home-image-container li img,
 .home-image-container li figure {
   height: 469px;
+  width: 100%;
+}
+
+.home-image-container li img {
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 50% 50%;
      object-position: 50% 50%;
-  width: 100%;
 }
 
 .home-team-container {

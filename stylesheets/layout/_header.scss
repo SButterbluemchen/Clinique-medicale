@@ -14,11 +14,11 @@
   background: $primary-color;
   text-align: center;
   li {
-    font-weight: map-get($map: $fontweights, $key: semi-bold);
+    font-weight: map-get($map: $fontweights, $key: normal);
     a {
       color: $secondary-color;
       &:hover {
-        @include hover($third-color, $primary-color);
+        @include hover($text-color, $primary-color);
       }
     }
   }
