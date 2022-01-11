@@ -486,6 +486,7 @@ h4 {
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 100%;
+  background: #ffffff;
 }
 
 .nav-bar {
@@ -559,12 +560,13 @@ footer {
   color: white;
   background: #01C5A2;
   padding: 0.7em 3em;
-  margin: 5em;
+  margin: 1em;
+  display: inline-block;
 }
 
 .btn--filled:hover {
   color: #ffffff;
-  background: rgba(1, 197, 162, 0.7);
+  background: #6dd8c5;
   -webkit-transform: scale(105%);
           transform: scale(105%);
   -webkit-transition-duration: 0.7s;
@@ -581,8 +583,10 @@ footer {
 }
 
 .home-main-container {
-  background: url() 100% fixed;
+  background: url(../img/home-hero-image.webp) 100% no-repeat fixed;
+  background-size: 100%;
   text-align: center;
+  padding: 1.5em;
 }
 
 .home-main-container h3 {
@@ -596,15 +600,38 @@ footer {
 }
 
 .home-faq-container {
-  gap: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 5em;
+          column-gap: 5em;
+}
+
+.home-faq-container h2 {
+  padding: 0.5em;
+  min-width: 95%;
 }
 
 .home-faq-container article {
+  max-width: 30em;
   margin: 0;
 }
 
-.home-faq-container li::marker {
+.home-faq-container article > ul > li {
+  margin-top: 2em;
+}
+
+.home-faq-container article > ul > li::marker {
   color: #0063A0;
+}
+
+.home-faq-container article h4 {
+  text-align: left;
 }
 
 .list-inside li {
@@ -614,7 +641,8 @@ footer {
 .home-image-wrapper {
   background: #F5FDFC;
   text-align: center;
-  padding: 2em;
+  padding: 4em;
+  margin: 0em;
 }
 
 .home-image-container {
@@ -624,25 +652,34 @@ footer {
       grid-template-columns: repeat(auto-fit, minmax(13em, 1fr));
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  gap: 1em;
+  gap: 2em;
 }
 
 .home-image-container li {
   list-style: none;
-  border: 1px solid red;
+  position: relative;
 }
 
 .home-image-container li h4 {
   background: rgba(255, 255, 255, 0.6);
-  padding: 2em;
+  padding: 1.2em;
+  position: absolute;
+  top: 10em;
+  width: 100%;
 }
 
 .home-image-container li p {
   color: #0063A0;
 }
 
-.home-image-container li figure, .home-image-container li img {
-  max-width: 15vw;
+.home-image-container li img,
+.home-image-container li figure {
+  height: 469px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  width: 100%;
 }
 
 .home-team-container {
@@ -655,12 +692,12 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 2em;
+  padding-top: 2em;
   text-align: center;
 }
 
 .home-team-container li {
   list-style: none;
-  border: 1px solid red;
 }
 
 .home-team-container li h5 {
@@ -673,5 +710,61 @@ footer {
 .home-team-container li p {
   max-width: 10em;
   margin: auto;
+}
+
+@media screen and (min-width: 400px) {
+  .members {
+    max-width: 80%;
+    margin: auto;
+  }
+}
+
+.members-intro {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(15em, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2em 0em;
+}
+
+.members-intro figure {
+  width: 95%;
+  height: 20em;
+  margin-bottom: 2em;
+}
+
+.members-intro figure img {
+  width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.members-intro article {
+  max-width: 95%;
+}
+
+@media screen and (min-width: 400px) {
+  .members-intro article h3 {
+    text-align: left;
+  }
+}
+
+.members-disease > * {
+  line-height: 0.2em;
+}
+
+.members-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=main.css.map */
