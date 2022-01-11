@@ -14,8 +14,7 @@ $fontsizes: (
     "h4": 1.2em
   );
 $fontweights: (
-    "bold": 600,
-    "semi-bold": 500,
+    "bold": 500,
     "normal": 400,
     "light": 200
   );
@@ -23,9 +22,8 @@ $fontweights: (
 // colors
 $primary-color: #0063A0;
 $secondary-color: #ffffff;
-$third-color: #01C5A2;
-$fourth-color: #F5FDFC;
-$text-color: #666666;
+$fourth-color: linear-gradient(340deg, $primary-color, white);
+$text-color: #3c4549;
 
 
 /// Breakpoints map

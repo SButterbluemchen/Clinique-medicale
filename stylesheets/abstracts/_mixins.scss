@@ -11,8 +11,8 @@
 @mixin hover($color, $background-color) {
   color: $color;
   background: $background-color;
-  transform: scale(105%);
-  transition-duration: 0.7s;
+  transform: scale(104%);
+  transition-duration: 0.5s;
 }
 
 @mixin flex-wrap($wrap, $justify-content, $align-items:null) {
