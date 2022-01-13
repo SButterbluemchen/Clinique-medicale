@@ -12,7 +12,6 @@
   }
   div {
     line-height: 1em;
-    color: $primary-color;
     margin: 2em auto;
   }
 }
@@ -29,9 +28,6 @@
     margin: 0;
     > ul > li {
       margin-top: 2em;
-      &::marker {
-        color: $primary-color;
-      }
     }
     h4 {
       text-align: left;
@@ -46,7 +42,7 @@
 }
 
 .home-image-wrapper {
-  background: $fourth-color;
+  // background: $fourth-color;
   text-align: center;
   padding: 4em;
   margin: 0em;
@@ -60,7 +56,6 @@
   li {
     list-style: none;
     position: relative;
-
     h4 {
       background: rgba($secondary-color, 0.6);
       padding: 1.2em;
@@ -68,15 +63,15 @@
       top: 10em;
       width: 100%;
     }
-    p {
-      color: $primary-color;
-    }
-    img,
     figure {
       height: 469px;
+      width: 100%;
+    }
+    img {
+      width: 100%;
+      height: 100%;
       object-fit: cover;
       object-position: 50% 50%;
-      width: 100%;
     }
   }
 }

@@ -8,7 +8,7 @@ body {
 
 h1, h2, h3, h4 {
   font-family: $heading-font-stack;
-  color: $primary-color;
+  color: $text-color;
   line-height: 1.2;
   text-align: center;
   margin: 0em;
@@ -19,14 +19,13 @@ h1 {
 }
 
 h2 {
-  @include headingstyle(bold, h2, uppercase);
+  @include headingstyle(normal, h2, uppercase);
 }
 
 h3 {
-  @include headingstyle(bold, h3, uppercase);
+  @include headingstyle(normal, h3, uppercase);
 }
 
 h4 {
-  @include headingstyle(bold, h4)
+  @include headingstyle(normal, h4)
 }
-
