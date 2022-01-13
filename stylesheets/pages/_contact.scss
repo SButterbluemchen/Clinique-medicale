@@ -1,18 +1,30 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the contact page.
 // -----------------------------------------------------------------------------
+// Je comprend pas pourquoi ça ne modifie absolument rien
 .gmap{
-    display: grid;
-    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    iframe{
+        width: 50vw;
+        height: 80vh;
+        /*
+        @media screen {width: 400px;
+            width: 100vw;
+            height: 100vh;
+        }
+ */   }  
 }
 
 
 
 .contact-doctolib-width{
-    width: 20vw;
+    width: auto;
 }
 
-.home-main-container h4
-{
+.home-main-container h4{
     margin-top: 500px;
 }
