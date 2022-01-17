@@ -1,0 +1,19 @@
+.home-main-container h4{
+  margin-top: 500px;
+}
+
+.gmap{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  iframe{
+      width: 50vw;
+      height: 80vh;
+      /*
+      @media screen {width: 400px;
+          width: 100vw;
+          height: 100vh;
+      }
+*/   }  
+}
