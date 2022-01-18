@@ -4,7 +4,7 @@
 footer {
   background: $primary-color;
   color: $secondary-color;
-  margin: auto;
+  margin: 7em -2em 0em -2em;
   padding: 2em;
 }
 
@@ -25,9 +25,7 @@ footer {
     margin: 0.5em 0em;
     line-height: 1.8em;
     a {
-      text-decoration: underline;
       color: $secondary-color;
-      cursor: pointer;
     }
   }
   figure {
@@ -35,4 +33,9 @@ footer {
       max-width: 20em;
     }
   }
+}
+
+.phone-number {
+  cursor: pointer;
+  text-decoration: underline;
 }

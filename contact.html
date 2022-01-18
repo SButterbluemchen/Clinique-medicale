@@ -21,8 +21,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
-<body>
-  <nav>
+<body class="wrapper">
+  <!-- <nav>
     <ul class="contact-bar">
       <li>78 boulevard montebello, 59000 Lille</li>
       <div>
@@ -41,58 +41,100 @@
       <li><a href="osteopathie.html">Ostéopathie & Posture</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-  </nav>
+  </nav> -->
   <!-- Main contact -->
   <main class="home-main-container">
-    <h1>
-      Centre ostéo-articulaire & pathologies du sportif
-    </h1>
-    <h4>Nous sommes ouverts :</h4>
-    <div>
-      <p>Du Lundi au Vendredi<br>
-        de 8h30 à 19h00</p>
-      <p>Le Samedi<br>de 9h00 à 13h00</p>
-    </div>
+    <article class="home-main-content wrapper">
+      <h1>
+        Centre ostéo-articulaire & pathologies du sportif
+      </h1>
+      <h4>Nous sommes ouverts :</h4>
+        <p>Du Lundi au Vendredi<br>
+          de 8h30 à 19h00</p>
+        <p>Le Samedi<br>de 9h00 à 13h00</p>
+    </article>
   </main>
   <!-- Doctolib -->
   <section class="container-book">
-    <h5>
-      Prenez votre rendez-vous directement sur Doctolib :
-    </h5>
-    <figure class="contact-doctolib-width">
-      <img src="img/Logo_Doctolib.svg" alt="Doctolib">
-    </figure>
-  </section>
-  <section>
-    <h5>Ou contacez-nous</h5>
-    <p>78 boulevard montebello, 59000 Lille</p>
-      <p>03 76 05 77 48</p>
+    <article class="block-book">
+      <figure>
+        <img src="img/website.png" alt="doctolib rendez-vous">
+      </figure>
+        <h5>
+          Prenez votre rendez-vous directement sur Doctolib :
+        </h5>
+      <figure class="doctolib-logo">
+        <a href="https://www.doctolib.fr/medecin-du-sport/lille/gautier-taillaint?utm_source=website"><img src="img/Logo_Doctolib.svg" alt="Doctolib"></a>
+      </figure>
+    </article>
+    <article class="block-book">
+      <figure>
+        <img src="img/rdv-telephonique.png" alt="doctolib rendez-vous">
+      </figure>
+      <h5>Ou contacez-nous</h5>
+      <p>78 boulevard montebello, 59000 Lille</p>
+      <a class="phone-number">03 76 05 77 48</a>
+    </article>
   </section>
   <!-- Google maps -->
+  <h3>Plan d'accès</h3>
   <section class="gmap">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2531.1906430828344!2d3.0409643159484747!3d50.623575182755786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d573f9c3977d%3A0x4d7035aa16d8e6f4!2s78%20Bd%20Montebello%2C%2059000%20Lille!5e0!3m2!1sen!2sfr!4v1641429768920!5m2!1sen!2sfr" 
     style="border:0;" loading="lazy">
     </iframe>
   </section>
 <!-- Plan d'accès -->
-  <section>
-    <h5>Plan d'accès</h5>
-    <article class="container-access">
-      <img src="img/logo-metro.png" alt="Accès Metro logo">
-      <p><span class="bold">Ligne 1</span> : Porte de postes</p>
-      <p><span class="bold">Ligne 2</span> : Cormontaigne</p>
+  <section class="container-access">
+    <article class="block-access">
+      <figure>
+        <img src="img/logo-metro.png" alt="Accès Metro logo">
+      </figure>
+      <div>
+        <p><span class="bold">Ligne 1</span> : Porte de postes</p>
+        <p><span class="bold">Ligne 2</span> : Cormontaigne</p>
+        </div>
     </article>
-    <article class="container-access">
-      <img src="img/logo-bus.png" alt="Accès Bus logo">
-      <p>L5 : Cormontaigne</p>
-      <p>CITL: Cormontaigne</p>
-      <p>L92 : Porte Des Postes</p>
-      <p>910 : Porte Des Postes</p>
+    <article class="block-access">
+      <figure>
+        <img src="img/logo-bus.png" alt="Accès Bus logo">
+      </figure>
+      <div>
+        <p><span class="bold">L5</span> : Cormontaigne</p>
+        <p><span class="bold">CITL</span> : Cormontaigne</p>
+        <p><span class="bold">L92</span> : Porte Des Postes</p>
+        <p><span class="bold">910</span> : Porte Des Postes</p>
+        </div>
     </article>
-    <article class="container-access">
-      <img src="img/logo-bike.png" alt="Accès Vélo logo">
-      <p>124 Boulevard Montebello</p>
+    <article class="block-access">
+      <figure>
+        <img src="img/logo-bike.png" alt="Accès Vélo logo">
+      </figure>
+      <div>
+        <p>124 Boulevard Montebello</p>
+        <p>28 Place Cormontaigne </p>
+        <p>Place Barthélémy Dorez</p>
+      </div>
     </article>
   </section>
+  <footer>
+    <section class="footer-content wrapper">
+      <article>
+        <h4>Adresse</h4>
+        <p>78 Boulevard montebello<br>
+          59000 Lille, France<br>
+          Tél : <a class="phone-number">03 76 05 77 48</a></p>
+      </article>
+      <article>
+        <h4>Horaires</h4>
+        <p>Lundi - Vendredi : 8h30 - 19h00</p>
+        <p>Samedi : 9h00 - 13h00</p>
+      </article>
+      <article>
+        <figure class="doctolib-logo">
+          <a href="https://www.doctolib.fr/medecin-du-sport/lille/gautier-taillaint?utm_source=website" target="_blank"><img src="img/Logo_Doctolib.svg" alt="Doctolib"></a>
+        </figure>
+      </article>
+    </section>
+  </footer>
 </body>
 </html>

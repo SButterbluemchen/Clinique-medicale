@@ -1,19 +1,81 @@
-.home-main-container h4{
-  margin-top: 500px;
+// To modify home-main-container, go to home.scss
+.container-book {
+  @include flex-wrap(wrap, center);
+  gap: 4em;
 }
 
-.gmap{
+.block-book {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  iframe{
-      width: 50vw;
-      height: 80vh;
-      /*
-      @media screen {width: 400px;
-          width: 100vw;
-          height: 100vh;
-      }
-*/   }  
+  text-align: center;
+  margin: -5em 1.5em 5em 1.5em;
+  padding: 3em 1.5em;
+  border: 0.1em solid rgb(235, 235, 235);
+  height: 20em;
+  width: 25em;
+  z-index: 1;
+  background: $secondary-color;
+  @include media(desktop) {
+    &:hover {
+      transform: translateY(-3em);
+      transition: 0.5s ease;
+    }
+  }
+  figure {
+    max-width: 3em;
+    img {
+      width: 100%;
+      object-fit: cover;
+      margin: 0.5em 0em;
+    }
+  }
+}
+
+.doctolib-logo {
+  min-width: 15em;
+  &:hover {
+    transform: scale(104%);
+    transition-duration: 0.5s;
+  }
+}
+
+.gmap {
+  @include flex-wrap(nowrap, center);
+  margin: 1em;
+  iframe {
+    width: 90vw;
+    height: 50vh;
+    @include media(desktop) {
+      max-width: 80vw;
+      height: 70vh;
+    }
+  }
+}
+
+.container-access {
+  @include flex-wrap(wrap, flex-start);
+  gap: 1.5em;
+  margin: 1.5em;
+  @include media(desktop) {
+    @include flex-wrap(wrap, center);
+    gap: 5.5em;
+  }
+}
+
+.block-access {
+  display: flex;
+  figure {
+    max-width: 2em;
+    height: auto;
+    margin: 0.2em;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.bold {
+  font-weight: map-get($map: $fontweights, $key: bold);
 }
