@@ -605,6 +605,11 @@ footer {
   text-align: center;
 }
 
+.phone-number {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .btn--empty {
   color: #0063A0;
   border: 0.1em solid #0063A0;
