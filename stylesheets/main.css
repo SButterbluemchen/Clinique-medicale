@@ -664,8 +664,8 @@ footer {
 #myBtn img:hover {
   -webkit-transform: translateY(-0.2em);
           transform: translateY(-0.2em);
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .doctolib-logo {

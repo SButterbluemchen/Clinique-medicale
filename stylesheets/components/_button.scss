@@ -33,7 +33,7 @@
     max-width: 1.5em;
     &:hover {
       transform: translateY(-0.2em);
-      transition: 0.5s ease;
+      transition: 0.5s ease-in-out;
     }
   }
 }
