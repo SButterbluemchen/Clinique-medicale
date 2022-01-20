@@ -1,0 +1,8 @@
+.doctolib-logo {
+  min-width: 12em;
+  margin: 2em;
+  &:hover {
+    transform: scale(104%);
+    transition-duration: 0.5s;
+  }
+}

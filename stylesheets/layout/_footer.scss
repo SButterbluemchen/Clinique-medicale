@@ -5,20 +5,18 @@ footer {
   background: $primary-color;
   color: $secondary-color;
   margin: 7em -2em 0em -2em;
-  padding: 2em;
+  padding: 1.5em 1em 0.5em 1em;
 }
 
 .footer-content {
-  display: flex;
-  @include flex-wrap(wrap, space-around, center);
+  @include flex-wrap(wrap, flex-end, center);
   article {
     width: 25em;
-    text-align: left;
   }
   h4 {
     color: $secondary-color;
+    margin-top: 2em;
     text-align: left;
-    padding: 0.5em 0em;
     text-transform: uppercase;
   }
   p {
@@ -29,13 +27,42 @@ footer {
     }
   }
   figure {
+    display: inline-block;
     img {
-      max-width: 20em;
+      margin-top: 2em;
+      margin-bottom: 2em;
+      width: 100%;
+      @include media(desktop) {
+        margin-top: 4em;
+      }
+      &:hover {
+        transform: scale(104%);
+        transition-duration: 0.5s;
+      }
     }
+  }
+}
+
+.footer-doctolib {
+  max-width: 9em;
+}
+
+.footer-instagram {
+  max-width: 3em;
+  img {
+    margin-left: 2em;
   }
 }
 
 .phone-number {
   cursor: pointer;
   text-decoration: underline;
+}
+
+.copyright {
+  @include headingstyle(light, small);
+  p {
+    margin: 2em 0em 0em 0em;
+    text-align: center;
+  }
 }

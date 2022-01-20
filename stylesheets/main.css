@@ -524,29 +524,28 @@ footer {
   background: #0063A0;
   color: #ffffff;
   margin: 7em -2em 0em -2em;
-  padding: 2em;
+  padding: 1.5em 1em 0.5em 1em;
 }
 
 .footer-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .footer-content article {
   width: 25em;
-  text-align: left;
 }
 
 .footer-content h4 {
   color: #ffffff;
+  margin-top: 2em;
   text-align: left;
-  padding: 0.5em 0em;
   text-transform: uppercase;
 }
 
@@ -559,13 +558,54 @@ footer {
   color: #ffffff;
 }
 
+.footer-content figure {
+  display: inline-block;
+}
+
 .footer-content figure img {
-  max-width: 20em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+@media only screen and (min-width: 900px) {
+  .footer-content figure img {
+    margin-top: 4em;
+  }
+}
+
+.footer-content figure img:hover {
+  -webkit-transform: scale(104%);
+          transform: scale(104%);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.footer-doctolib {
+  max-width: 9em;
+}
+
+.footer-instagram {
+  max-width: 3em;
+}
+
+.footer-instagram img {
+  margin-left: 2em;
 }
 
 .phone-number {
   cursor: pointer;
   text-decoration: underline;
+}
+
+.copyright {
+  font-weight: 200;
+  font-size: 0.8em;
+}
+
+.copyright p {
+  margin: 2em 0em 0em 0em;
+  text-align: center;
 }
 
 .btn--empty {
@@ -579,6 +619,18 @@ footer {
 .btn--empty:hover {
   color: white;
   background: #0063A0;
+  -webkit-transform: scale(104%);
+          transform: scale(104%);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.doctolib-logo {
+  min-width: 12em;
+  margin: 2em;
+}
+
+.doctolib-logo:hover {
   -webkit-transform: scale(104%);
           transform: scale(104%);
   -webkit-transition-duration: 0.5s;
@@ -848,17 +900,6 @@ footer {
   -o-object-fit: cover;
      object-fit: cover;
   margin: 0.5em 0em;
-}
-
-.doctolib-logo {
-  min-width: 15em;
-}
-
-.doctolib-logo:hover {
-  -webkit-transform: scale(104%);
-          transform: scale(104%);
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
 }
 
 .gmap {
