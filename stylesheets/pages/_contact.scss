@@ -12,14 +12,16 @@
   margin: -5em 1.5em 5em 1.5em;
   padding: 3em 1.5em;
   border: 0.1em solid rgb(235, 235, 235);
-  height: 20em;
-  width: 25em;
+  height: 22em;
+  width: 23em;
   z-index: 1;
   background: $secondary-color;
   @include media(desktop) {
+    transition: 0.5s ease-in-out;
     &:hover {
+      box-shadow: 1px 2px 10px rgba(165, 161, 161, 0.445),
+      -1px 0 10px rgba(165, 161, 161, 0.445);
       transform: translateY(-3em);
-      transition: 0.5s ease;
     }
   }
   figure {

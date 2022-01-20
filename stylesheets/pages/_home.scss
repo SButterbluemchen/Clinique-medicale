@@ -16,7 +16,7 @@
     margin: 0.5em 0em;
   }
   h4 {
-    margin: 1em 1em 0em 1em;
+    margin: 1em;
   }
   div {
     line-height: 1em;
@@ -25,8 +25,7 @@
 }
 
 .home-main-content {
-  color: $secondary-color;
-  h1,h3,h4 {
+  h1, h3, h4, p {
   color: $secondary-color;
   }
   @include media(desktop) {

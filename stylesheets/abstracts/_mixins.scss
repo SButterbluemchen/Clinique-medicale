@@ -24,7 +24,7 @@
 
 @mixin media($breakpoint) {
   @if $breakpoint==tablet {
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 599px) {
       @content;
     }
   }
