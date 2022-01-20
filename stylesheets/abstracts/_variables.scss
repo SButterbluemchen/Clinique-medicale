@@ -25,12 +25,3 @@ $secondary-color: #ffffff;
 $fourth-color: linear-gradient(340deg, $primary-color, white);
 $text-color: #3c4549;
 
-
-/// Breakpoints map
-/// @prop {String} keys - Keys are identifiers mapped to a given length
-/// @prop {Map} values - Values are actual breakpoints expressed in pixels
-$breakpoints: (
-  'small': 320px,
-  'medium': 768px,
-  'large': 1024px,
-) !default;

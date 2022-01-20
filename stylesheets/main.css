@@ -388,7 +388,7 @@ a {
 }
 
 .wrapper {
-  margin: 2em;
+  margin: 0em 2em;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -431,6 +431,15 @@ h3 {
 h4 {
   font-weight: 400;
   font-size: 1.2em;
+}
+
+h5 {
+  margin: 0.2em;
+  text-align: center;
+}
+
+p {
+  margin: 0.2em;
 }
 
 /**
@@ -514,7 +523,7 @@ h4 {
 footer {
   background: #0063A0;
   color: #ffffff;
-  margin: auto;
+  margin: 7em -2em 0em -2em;
   padding: 2em;
 }
 
@@ -547,13 +556,16 @@ footer {
 }
 
 .footer-content p a {
-  text-decoration: underline;
   color: #ffffff;
-  cursor: pointer;
 }
 
 .footer-content figure img {
   max-width: 20em;
+}
+
+.phone-number {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .btn--empty {
@@ -574,19 +586,47 @@ footer {
 }
 
 .home-main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: url(../img/home-hero-image.webp) 100% no-repeat fixed;
-  background-size: 100%;
+  background-size: cover;
+  height: 100vh;
   text-align: center;
   padding: 1.5em;
+  margin: 0em -2em 2em -2em;
+  margin-top: auto;
 }
 
 .home-main-container h3 {
   margin: 0.5em 0em;
 }
 
+.home-main-container h4 {
+  margin: 1em;
+}
+
 .home-main-container div {
   line-height: 1em;
   margin: 2em auto;
+}
+
+.home-main-content h1, .home-main-content h3, .home-main-content h4, .home-main-content p {
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 900px) {
+  .home-main-content {
+    width: 60%;
+  }
 }
 
 .home-faq-container {
@@ -751,5 +791,146 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.container-book {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 4em;
+}
+
+.block-book {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: -5em 1.5em 5em 1.5em;
+  padding: 3em 1.5em;
+  border: 0.1em solid #ebebeb;
+  height: 22em;
+  width: 23em;
+  z-index: 1;
+  background: #ffffff;
+}
+
+@media only screen and (min-width: 900px) {
+  .block-book {
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+  }
+  .block-book:hover {
+    -webkit-box-shadow: 1px 2px 10px rgba(165, 161, 161, 0.445), -1px 0 10px rgba(165, 161, 161, 0.445);
+            box-shadow: 1px 2px 10px rgba(165, 161, 161, 0.445), -1px 0 10px rgba(165, 161, 161, 0.445);
+    -webkit-transform: translateY(-3em);
+            transform: translateY(-3em);
+  }
+}
+
+.block-book figure {
+  max-width: 3em;
+}
+
+.block-book figure img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0.5em 0em;
+}
+
+.doctolib-logo {
+  min-width: 15em;
+}
+
+.doctolib-logo:hover {
+  -webkit-transform: scale(104%);
+          transform: scale(104%);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.gmap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1em;
+}
+
+.gmap iframe {
+  width: 90vw;
+  height: 50vh;
+}
+
+@media only screen and (min-width: 900px) {
+  .gmap iframe {
+    max-width: 80vw;
+    height: 70vh;
+  }
+}
+
+.container-access {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 1.5em;
+  margin: 1.5em;
+}
+
+@media only screen and (min-width: 900px) {
+  .container-access {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 5.5em;
+  }
+}
+
+.block-access {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.block-access figure {
+  max-width: 2em;
+  height: auto;
+  margin: 0.2em;
+}
+
+.block-access figure img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bold {
+  font-weight: 500;
 }
 /*# sourceMappingURL=main.css.map */

@@ -3,16 +3,33 @@
 // -----------------------------------------------------------------------------
 
 .home-main-container {
+  @include flex-wrap(wrap, center);
+  align-items: center;
   background: url(../img/home-hero-image.webp) 100% no-repeat fixed;
-  background-size: 100%;
+  background-size: cover;
+  height: 100vh;
   text-align: center;
   padding: 1.5em;
+  margin: 0em -2em 2em -2em;
+  margin-top: auto;
   h3 {
     margin: 0.5em 0em;
+  }
+  h4 {
+    margin: 1em;
   }
   div {
     line-height: 1em;
     margin: 2em auto;
+  }
+}
+
+.home-main-content {
+  h1, h3, h4, p {
+  color: $secondary-color;
+  }
+  @include media(desktop) {
+    width: 60%;
   }
 }
 

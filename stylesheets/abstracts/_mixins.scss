@@ -2,7 +2,7 @@
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
 
-@mixin headingstyle($weight, $size, $transform:null) {
+@mixin headingstyle($weight, $size, $transform: null) {
   font-weight: map-get($map: $fontweights, $key: $weight);
   font-size: map-get($map: $fontsizes, $key: $size);
   text-transform: $transform;
@@ -15,11 +15,24 @@
   transition-duration: 0.5s;
 }
 
-@mixin flex-wrap($wrap, $justify-content, $align-items:null) {
+@mixin flex-wrap($wrap, $justify-content, $align-items: null) {
   display: flex;
   flex-wrap: $wrap;
   justify-content: $justify-content;
   $align-items: $align-items;
+}
+
+@mixin media($breakpoint) {
+  @if $breakpoint==tablet {
+    @media only screen and (min-width: 599px) {
+      @content;
+    }
+  }
+  @if $breakpoint==desktop {
+    @media only screen and (min-width: 900px) {
+      @content;
+    }
+  }
 }
 
 /// Event wrapper
@@ -51,4 +64,3 @@
     @content;
   }
 }
-
