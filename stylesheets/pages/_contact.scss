@@ -34,14 +34,6 @@
   }
 }
 
-.doctolib-logo {
-  min-width: 15em;
-  &:hover {
-    transform: scale(104%);
-    transition-duration: 0.5s;
-  }
-}
-
 .gmap {
   @include flex-wrap(nowrap, center);
   margin: 1em;
