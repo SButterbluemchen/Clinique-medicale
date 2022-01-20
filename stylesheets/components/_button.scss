@@ -12,3 +12,28 @@
     @include hover(white, $primary-color);
   }
 }
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  transition: 2s ease;
+  bottom: 1.5em; /* Place the button at the bottom of the page */
+  right: 2em; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: $primary-color; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 0.5em 0.6em; /* Some padding */
+  border: 0.1em solid $secondary-color;
+  border-radius: 50%; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  img {
+    max-width: 1.5em;
+    &:hover {
+      transform: translateY(-0.2em);
+      transition: 0.5s ease;
+    }
+  }
+}
