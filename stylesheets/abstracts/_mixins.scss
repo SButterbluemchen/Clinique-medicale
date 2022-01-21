@@ -35,6 +35,14 @@
   }
 }
 
+@mixin font-resize($fontsizes) {
+  @media only screen and (min-width: 900px) {
+    @each $fontsize, $value in $fontsizes {
+      font-size: $value * 1.5;
+  }
+  }   
+}
+
 /// Event wrapper
 /// @author Harry Roberts
 /// @param {Bool} $self [false] - Whether or not to include current selector
