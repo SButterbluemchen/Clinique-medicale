@@ -38,7 +38,7 @@
 @mixin font-resize($fontsizes) {
   @media only screen and (min-width: 900px) {
     @each $fontsize, $value in $fontsizes {
-      font-size: $value * 1.5;
+      font-size: $value * 1.3;
   }
   }   
 }

@@ -33,7 +33,6 @@
   p {
     color: $secondary-color;
   }
-  @include font-resize($fontsizes);
   @include media(desktop) {
     width: 60%;
   }
