@@ -366,6 +366,17 @@ html {
           box-sizing: border-box;
 }
 
+@media only screen and (min-width: 900px) {
+  html {
+    font-size: 3.25em;
+    font-size: 1.95em;
+    font-size: 1.82em;
+    font-size: 1.56em;
+    font-size: 1.3em;
+    font-size: 1.04em;
+  }
+}
+
 /**
  * Make all elements from the DOM inherit from the parent box-sizing
  * Since `*` has a specificity of 0, it does not override the `html` value
@@ -437,6 +448,8 @@ h5 {
 
 p {
   margin: 0.5em 0em;
+  font-weight: 400;
+  font-size: 1em;
 }
 
 /**
@@ -724,17 +737,6 @@ footer {
 
 @media only screen and (min-width: 900px) {
   .home-main-content {
-    font-size: 3.75em;
-    font-size: 2.25em;
-    font-size: 2.1em;
-    font-size: 1.8em;
-    font-size: 1.5em;
-    font-size: 1.2em;
-  }
-}
-
-@media only screen and (min-width: 900px) {
-  .home-main-content {
     width: 60%;
   }
 }
@@ -1015,6 +1017,7 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 4em;
+  margin-bottom: 3em;
 }
 
 .block-book {
@@ -1029,11 +1032,11 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  margin: -5em 1.5em 5em 1.5em;
-  padding: 3em 1.5em;
+  margin: -1.5em 1.5em 0em 1.5em;
+  padding: 3em 1em;
   border: 0.1em solid #ebebeb;
   height: 22em;
-  width: 23em;
+  width: 25em;
   z-index: 1;
   background: #ffffff;
 }
@@ -1042,6 +1045,7 @@ footer {
   .block-book {
     -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
+    margin: -4em 1.5em 3em 1.5em;
   }
   .block-book:hover {
     -webkit-box-shadow: 1px 2px 10px rgba(165, 161, 161, 0.445), -1px 0 10px rgba(165, 161, 161, 0.445);
@@ -1062,6 +1066,18 @@ footer {
   margin: 0.5em 0em;
 }
 
+.doctolib-logo {
+  min-width: 11em;
+  margin: 2em;
+}
+
+.doctolib-logo:hover {
+  -webkit-transform: scale(104%);
+          transform: scale(104%);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
 .gmap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1071,7 +1087,7 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 1em;
+  margin: 1.5em 0em;
 }
 
 .gmap iframe {
