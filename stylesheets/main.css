@@ -683,9 +683,9 @@ footer {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .footer-content article {
@@ -701,7 +701,6 @@ footer {
 
 .footer-content p {
   margin: 0.5em 0em;
-  line-height: 1.8em;
 }
 
 .footer-content p a {
@@ -754,7 +753,7 @@ footer {
 }
 
 .copyright p {
-  margin: 2em 0em 0em 0em;
+  margin: 3em 0em 0em 0em;
   text-align: center;
 }
 
