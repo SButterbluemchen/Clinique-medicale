@@ -452,6 +452,10 @@ p {
   font-size: 1em;
 }
 
+.bold {
+  font-weight: 600;
+}
+
 /**
  * Clear inner floats
  */
@@ -890,6 +894,15 @@ footer {
   }
 }
 
+.home-main-content div {
+  line-height: 1.5;
+}
+
+.home-main-content div a {
+  color: white;
+  text-decoration: none;
+}
+
 @media only screen and (min-width: 900px) {
   .home-intro-container {
     margin: 3em;
@@ -1294,9 +1307,5 @@ footer {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.bold {
-  font-weight: 500;
 }
 /*# sourceMappingURL=main.css.map */

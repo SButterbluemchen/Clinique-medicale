@@ -36,6 +36,13 @@
   @include media(desktop) {
     width: 60%;
   }
+  div {
+    line-height: 1.5;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
 }
 
 // -----------------------------------------------------------------------------
