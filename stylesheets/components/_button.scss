@@ -13,6 +13,16 @@
   }
 }
 
+.btn-menu {
+  border: 0.1em solid $secondary-color;
+  width: 70%;
+  text-align: center;
+  margin: 1em 1em;
+  @include media(desktop) {
+    display: none;
+  }
+}
+
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
