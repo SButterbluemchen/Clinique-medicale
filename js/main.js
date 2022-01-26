@@ -37,6 +37,7 @@ function toggleMenu() {
     toggle.querySelector("a").innerHTML = "<i class='far fa-times-circle'></i>";
   }
 }
+toggle.addEventListener('click', toggleMenu, false);
 
 //image instead of fontawesome as a burger menu
 // function toggleMenu() {
@@ -50,8 +51,6 @@ function toggleMenu() {
 //     toggle.querySelector("img").src = "img/cancel-copy.png";
 //   }
 // }
-
-toggle.addEventListener('click', toggleMenu, false);
 
 // Submenu
 const items = document.querySelectorAll('.item');
@@ -84,3 +83,21 @@ function closeSubmenu(e) {
 }
 
 document.addEventListener('click', closeSubmenu, false);
+
+// -----------------------------------------------------------------------------
+// ACCORDION MEMBERS PAGE
+// -----------------------------------------------------------------------------
+const acc = document.getElementsByClassName("accordion");
+let i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    const panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}

@@ -1,41 +1,99 @@
-.members {
-  @media screen and (min-width: 400px) {
-    max-width: 80%;
+.members-intro {
+  margin: 4em 0em;
+  @include flex-wrap(wrap, center);
+  @include media(desktop) {
+    gap: 3em;
+  }
+  article {
+    padding: 0.5em 0em;
+    @include media(desktop) {
+      max-width: 40%;
+    }
+    h3 {
+      margin: 0.5em 0em;
+    }
+    p {
+      margin: 0.5em 0em;
+    }
+  }
+  figure {
+    width: 21em;
+    @include media(desktop) {
+      width: 30em;
+    }
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.members-disease-list {
+  margin: 1.5em 0em;
+  list-style: none;
+  text-align: left;
+  h5 {
+    text-align: left;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// ACCORDION MEMBERS-DISEASE-LIST START
+// -----------------------------------------------------------------------------
+.accordion {
+  background: white;
+  border-bottom: 0.05em solid $primary-color;
+  cursor: pointer;
+  padding: 1em;
+  margin: 0em;
+  width: 100%;
+  outline: none;
+  transition: 0.4s;
+  @include media(desktop) {
+    max-width: 70%;
+    margin: auto;
+    &:hover {
+      color: $secondary-color;
+      background: $primary-color;
+    }
+  }
+}
+
+.active {
+  color: $secondary-color;
+  background: $primary-color;
+}
+
+.panel {
+  padding: 0em 1em;
+  background: $secondary-color;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  @include media(desktop) {
+    max-width: 70%;
     margin: auto;
   }
 }
 
-.members-intro {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
-  justify-content: center;
-  margin: 2em 0em;
-  figure {
-    width: 95%;
-    height: 20em;
-    margin-bottom: 2em;
-    img {
-      width: 100%;
-      max-height: 100%;
-      object-fit: cover;
-    }
-  }
-  article {
-    max-width: 95%;
-    h3 {
-    @media screen and (min-width: 400px) {
-      text-align: left;
-    }
-    }
-  }
+//add icons
+.accordion::after {
+  content: "\232A"; /* Unicode character for "plus" sign (+) */
+  @include headingstyle(extra-bold, p);
+  color: $primary-color;
+  float: right;
+  margin-left: 0.3em;
 }
 
-.members-disease {
-  > * {
-    line-height: 0.2em;
-  }
+.accordion.active:after {
+  content: "\FE40";
+  color: $secondary-color;
 }
+
+// -----------------------------------------------------------------------------
+// ACCORDION MEMBERS-DISEASE-LIST END
+// -----------------------------------------------------------------------------
 
 .members-button {
-  @include flex-wrap(nowrap, center, $align-items:null);
+  @include flex-wrap(nowrap, center, $align-items: null);
 }

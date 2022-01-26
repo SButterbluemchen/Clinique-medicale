@@ -21,7 +21,7 @@
   <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
-<body class="members wrapper">
+<body class="wrapper">
   <nav>
     <!-- <ul class="contact-bar">
       <li>78 boulevard montebello, 59000 Lille</li>
@@ -92,45 +92,103 @@
   <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/up-arrow.png" alt="top button"></button>
   <section class="members-intro">
     <figure>
-      <img src="img/infiltration-home.webp" alt="epaule_anatomie">
+      <img src="img/home-hero-image.webp" alt="epaule_anatomie">
     </figure>
     <article>
       <h3>L'épaule</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolor repudiandae nemo esse minima officiis itaque, ab, velit quas magnam quam in quaerat repellat sit fugiat distinctio, quasi illo architecto.</p>
+      <p>Les douleurs de l’épaule sont parmi <strong>les motifs de consultation les plus fréquents</strong> en médecine générale et en rhumatologie, et peuvent être le signe de diverses pathologies de l’épaule. Cette page résume les principaux symptômes rencontrés par le patient victime d’une telle pathologie.</p>
     </article>
-  </section>
+</section>
   <section>
     <h3>Les pathologies les plus fréquentes de l'épaule</h3>
-    <ul class="members-disease-list wrapper">
+    <ul class="members-disease-list">
       <li>
-        <article class="members-disease">
-          <h5>Maladie X</h5>
-          <p>Je suis une maladie qui fait ...</p>
+        <article>
+          <h5 class="accordion">Rupture de la coiffe des rotateurs</h5>
+          <div class="panel">
+            <p>Les symptômes d’une rupture de la coiffe des rotateurs dépendent de la cause de la rupture. S’il s’agit d’une rupture trophique (spontanée ou faisant suite à des microtraumatismes répétés), ils sont assez discrets, avec une abduction limitée du bras. En cas d’une rupture traumatique (suite à un effort ou choc violent), les symptômes sont bien plus importants, avec une douleur au niveau du moignon de l’épaule et une impotence fonctionnelle maximale.</p>
+          </div>
         </article>
       </li>
       <li>
-        <article class="members-disease">
-          <h5>Maladie X</h5>
-          <p>Je suis une maladie qui fait ...</p>
+        <article>
+          <h5 class="accordion">Slap lésion de l'épaule</h5>
+          <div class="panel">
+            <p>Les symptômes d’une rupture des tendons du triceps / biceps sont une douleur légère à modérée lors de mouvements de l’épaule, avec une sensation de gêne à l’intérieur. L’épaule est plus ou moins instable et le patient ressent une perte de force au niveau de l’épaule et du bras, combinée à une perte de vitesse lors d’un geste de lancer.</p>
+          </div>
         </article>
       </li>
       <li>
-        <article class="members-disease">
-          <h5>Maladie X</h5>
-          <p>Je suis une maladie qui fait ...</p>
+        <article>
+        <h5 class="accordion">Tendinite de l'épaule</h5>
+          <div class="panel">
+            <p>Les symptômes de la tendinite de l’épaule sont une douleur à l’extension du bras, s’intensifiant avec le temps. Elle peut également être ressentie au repos. Parfois, cette douleur peut s’accompagner d’un gonflement au niveau de l’articulation de l’épaule. Outre cette douleur, le patient peut ressentir une sensation de craquement dans l’articulation, ainsi qu’un enraidissement et une perte de force au niveau du bras.</p>
+          </div>
         </article>
       </li>
       <li>
-        <article class="members-disease">
-          <h5>Maladie X</h5>
-          <p>Je suis une maladie qui fait ...</p>
+        <article>
+          <h5 class="accordion">Tendinite des tendons du triceps/biceps</h5>
+          <div class="panel">
+            <p>Les symptômes d’une tendinite du biceps sont une douleur à l’avant de l’articulation de l’épaule, s’étendant dans le bras et se réveillant lors de mouvements de flexion, d’étirement, ou lorsque l’on appuie sur le tendon. Pour la tendinite du triceps, la douleur est située à l’arrière du coude.</p>
+          </div>
         </article>
       </li>
       <li>
-      <article class="members-disease">
-        <h5>Maladie X</h5>
-        <p>Je suis une maladie qui fait ...</p>
+      <article>
+        <h5 class="accordion">Instabilité de l'épaule</h5>
+        <div class="panel">
+          <p>Les symptômes de l’instabilité de l’épaule sont des douleurs vives et handicapantes lors des mouvements de la vie quotidienne. Le patient ressent également une impression de dérobement de l’articulation de l’épaule, accompagnée de craquements.</p>
+        </div>
       </article>
+      </li>
+      <li>
+        <article>
+          <h5 class="accordion">Arthrose de l'épaule</h5>
+          <div class="panel">
+            <p>Les symptômes de l’arthrose de l’épaule, discrets au début de la pathologie, s’intensifient avec le temps. Le patient ressent des douleurs intermittentes au niveau de l’épaule, notamment lors des rotations, ainsi que des blocages temporaires de l’articulation, accompagnés de craquements et d’un enraidissement progressif.</p>
+          </div>
+        </article>
+      </li>
+      <li>
+        <article>
+          <h5 class="accordion">Arthrose acromio-claviculaire</h5>
+          <div class="panel">
+            <p>Les symptômes de l’arthrose acromio-claviculaire sont une douleur irradiant vers la nuque et le trapèze, présente de manière virulente la nuit car accentuées par la position latérale prolongée. Cette douleur se fait également ressentir lors des mouvements d’adduction. De plus, elle s’accompagne d’une perte de mobilité et d’enraidissements handicapants pour la vie quotidienne.</p>
+          </div>
+        </article>
+      </li>
+      <li>
+        <article>
+          <h5 class="accordion">Fracture de l'épaule (humérus + omoplate)</h5>
+          <div class="panel">
+            <p>Les symptômes d’une fracture de l’épaule sont une douleur intense (survenant lors du traumatisme), accompagnée d’un craquement audible. Immédiatement, le patient ressent une diminution conséquente de la mobilité de l’épaule. L’épaule est déformée et tuméfiée, et la douleur continuelle, même au repos.</p>
+          </div>
+        </article>
+      </li>
+      <li>
+        <article>
+          <h5 class="accordion">Fracture de la clavicule</h5>
+          <div class="panel">
+            <p>Les symptômes de la fracture de la clavicule sont une douleur vive et un craquement audible lors du traumatisme. Le patient ne peut absolument pas lever ou mobiliser son bras. La zone autour de la clavicule est tuméfiée et présente une bosse. Des saignements sont présents, signes d’une fracture ouverte.</p>
+          </div>
+        </article>
+      </li>
+      <li>
+        <article>
+          <h5 class="accordion">Luxation acromio-claviculaire</h5>
+          <div class="panel">
+            <p>Les symptômes de l’arthrose acromio-claviculaire sont une douleur irradiant vers la nuque et le trapèze, présente de manière virulente la nuit car accentuées par la position latérale prolongée. Cette douleur se fait également ressentir lors des mouvements d’adduction. De plus, elle s’accompagne d’une perte de mobilité et d’enraidissements handicapants pour la vie quotidienne.</p>
+          </div>
+        </article>
+      </li>
+      <li>
+        <article>
+          <h5 class="accordion">Capsulite de l'épaule</h5>
+          <div class="panel">
+            <p>Les symptômes d’une capsulite de l’épaule apparaissent progressivement. Après une première phase douloureuse, l’articulation s’enraidit, limitant les mouvements de la vie quotidienne. Par la suite, lorsque la pathologie s’aggrave, la douleur devient plus intense, survenant même au repos et s’accompagnant d’un blocage de l’épaule.</p>
+          </div>
+        </article>
       </li>
     </ul>
   </section>
@@ -157,6 +215,32 @@
   <article class="members-button">
     <a class="btn--empty" href="https://www.doctolib.fr/medecin-du-sport/lille/gautier-taillaint?utm_source=website" target="_blank">Réserver sur Doctolib</a>
   </article>
+  <footer>
+    <section class="footer-content">
+      <article>
+        <h4>Adresse</h4>
+        <p>78 Boulevard montebello<br>
+          59000 Lille, France<br>
+          Tél : <a class="phone-number">03 76 05 77 48</a></p>
+      </article>
+      <article>
+        <h4>Horaires</h4>
+        <p>Lundi - Vendredi : 8h30 - 19h00</p>
+        <p>Samedi : 9h00 - 13h00</p>
+      </article>
+      <article>
+        <figure class="footer-doctolib">
+          <a href="https://www.doctolib.fr/medecin-du-sport/lille/gautier-taillaint?utm_source=website" target="_blank"><img src="img/logo-doctolib-white.png" alt="Doctolib"></a>
+        </figure>
+        <figure class="footer-instagram">
+          <a href="https://www.instagram.com"><img src="img/instagram.png" alt="instagram logo"></a>
+        </figure>
+      </article>
+    </section>
+    <section class="copyright">
+      <p>Copyright 2022 - Mentions légales</p>
+    </section>
+  </footer>
   <script src="js/main.js"></script>
 </body>
 </html>
