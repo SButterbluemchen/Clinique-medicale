@@ -183,7 +183,7 @@
 
 .home-team-container {
   @include flex-wrap(wrap, center);
-  gap: 2em;
+  gap: 3em;
   padding-top: 2em;
   text-align: center;
   li {
@@ -194,13 +194,16 @@
       @include headingstyle(normal, h4);
     }
     p {
-      max-width: 10em;
+      max-width: 15em;
       margin: auto;
     }
     figure {
-      max-width: 15em;
+      max-width: 10em;
+      margin: auto;
       img {
         width: 100%;
+        object-fit: fill;
+        border-radius: 100%;
       }
     }
   }
