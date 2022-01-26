@@ -11,7 +11,7 @@
 @mixin hover($color, $background-color) {
   color: $color;
   background: $background-color;
-  transform: scale(104%);
+  transform: scale(102%);
   transition-duration: 0.5s;
 }
 
@@ -24,12 +24,17 @@
 
 @mixin media($breakpoint) {
   @if $breakpoint==tablet {
-    @media only screen and (min-width: 599px) {
+    @media only screen and (min-width: 600px) {
       @content;
     }
   }
   @if $breakpoint==desktop {
     @media only screen and (min-width: 900px) {
+      @content;
+    }
+  }
+  @if $breakpoint==mobile {
+    @media only screen and (max-width: 599px) {
       @content;
     }
   }
