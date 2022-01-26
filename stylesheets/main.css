@@ -452,6 +452,10 @@ p {
   font-size: 1em;
 }
 
+.bold {
+  font-weight: 600;
+}
+
 /**
  * Clear inner floats
  */
@@ -890,6 +894,15 @@ footer {
   }
 }
 
+.home-main-content div {
+  line-height: 1.5;
+}
+
+.home-main-content div a {
+  color: white;
+  text-decoration: none;
+}
+
 @media only screen and (min-width: 900px) {
   .home-intro-container {
     margin: 3em;
@@ -1071,7 +1084,7 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 2em;
+  gap: 3em;
   padding-top: 2em;
   text-align: center;
 }
@@ -1088,16 +1101,20 @@ footer {
 }
 
 .home-team-container li p {
-  max-width: 10em;
+  max-width: 15em;
   margin: auto;
 }
 
 .home-team-container li figure {
-  max-width: 15em;
+  max-width: 10em;
+  margin: auto;
 }
 
 .home-team-container li figure img {
   width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  border-radius: 100%;
 }
 
 @media screen and (min-width: 400px) {
@@ -1294,9 +1311,5 @@ footer {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.bold {
-  font-weight: 500;
 }
 /*# sourceMappingURL=main.css.map */
