@@ -1084,7 +1084,7 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 2em;
+  gap: 3em;
   padding-top: 2em;
   text-align: center;
 }
@@ -1101,16 +1101,20 @@ footer {
 }
 
 .home-team-container li p {
-  max-width: 10em;
+  max-width: 15em;
   margin: auto;
 }
 
 .home-team-container li figure {
-  max-width: 15em;
+  max-width: 10em;
+  margin: auto;
 }
 
 .home-team-container li figure img {
   width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  border-radius: 100%;
 }
 
 @media screen and (min-width: 400px) {
