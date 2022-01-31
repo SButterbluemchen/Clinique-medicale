@@ -141,9 +141,22 @@
 .home-image-wrapper {
   background: $fourth-color;
   text-align: justify;
+<<<<<<< Updated upstream
   margin: 5em -1.5em;
   padding: 5em 1.5em;
+=======
+<<<<<<< Updated upstream
+  margin: 3em 0em 5em 0em;
+  h2 {
+    @include media(desktop) {
+      margin: 3em 0em 0em 0em;
+    }
+>>>>>>> Stashed changes
   }
+=======
+  margin: 5em -1.5em;
+  padding: 5em 1.5em;
+>>>>>>> Stashed changes
   p {
     margin: 1em 0.3em 2em 0.3em;
     @include media(desktop) {
