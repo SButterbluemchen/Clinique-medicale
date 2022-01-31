@@ -903,18 +903,18 @@ footer {
   margin: 2em auto;
 }
 
-.home-main-content {
+.home-main-content, .contact-main-content {
   position: relative;
   color: #3c4549;
 }
 
 @media only screen and (min-width: 900px) {
-  .home-main-content {
+  .home-main-content, .contact-main-content {
     width: 45%;
   }
 }
 
-.home-main-content div {
+.home-main-content div, .contact-main-content div {
   background: rgba(255, 255, 255, 0.8);
   border: 0.2em solid #0063A0;
   padding: 2em 0em;
@@ -922,13 +922,13 @@ footer {
 }
 
 @media only screen and (min-width: 900px) {
-  .home-main-content div {
+  .home-main-content div, .contact-main-content div {
     padding: 3.5em 0em;
     margin-top: 2em;
   }
 }
 
-.home-main-content div a {
+.home-main-content div a, .contact-main-content div a {
   text-decoration: none;
 }
 
@@ -1415,6 +1415,15 @@ footer {
   }
 }
 
+.contact-main-content {
+  color: #ffffff;
+}
+
+.contact-main-content h1,
+.contact-main-content h4 {
+  color: #ffffff;
+}
+
 .container-book {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1444,7 +1453,7 @@ footer {
   padding: 3em 1em;
   border: 0.1em solid #ebebeb;
   height: 22em;
-  width: 25em;
+  width: 26em;
   z-index: 1;
   background: #ffffff;
 }

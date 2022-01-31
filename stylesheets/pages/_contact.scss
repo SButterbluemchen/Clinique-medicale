@@ -1,4 +1,12 @@
 // To modify home-main-container, go to home.scss
+.contact-main-content {
+  @extend .home-main-content;
+  color: $secondary-color;
+  h1,
+  h4 {
+    color: $secondary-color;
+  }
+}
 
 // -----------------------------------------------------------------------------
 // SECOND SECTION - Blocks doctolib and call
@@ -19,7 +27,7 @@
   padding: 3em 1em;
   border: 0.1em solid rgb(235, 235, 235);
   height: 22em;
-  width: 25em;
+  width: 26em;
   z-index: 1;
   background: $secondary-color;
   @include media(desktop) {
@@ -27,7 +35,7 @@
     margin: -4em 1.5em 3em 1.5em;
     &:hover {
       box-shadow: 1px 2px 10px rgba(165, 161, 161, 0.445),
-      -1px 0 10px rgba(165, 161, 161, 0.445);
+        -1px 0 10px rgba(165, 161, 161, 0.445);
       transform: translateY(-3em);
     }
   }
