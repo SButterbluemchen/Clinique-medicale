@@ -143,13 +143,13 @@
   text-align: justify;
   margin: 5em -1.5em;
   padding: 5em 1.5em;
-  }
   p {
     margin: 1em 0.3em 2em 0.3em;
     @include media(desktop) {
     text-align: center;
     }
   }
+}
 
 .home-service-container {
   max-width: 85%;

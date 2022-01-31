@@ -1055,12 +1055,12 @@ footer {
   padding: 5em 1.5em;
 }
 
-p {
+.home-image-wrapper p {
   margin: 1em 0.3em 2em 0.3em;
 }
 
 @media only screen and (min-width: 900px) {
-  p {
+  .home-image-wrapper p {
     text-align: center;
   }
 }
