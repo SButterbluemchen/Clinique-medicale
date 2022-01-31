@@ -12,7 +12,6 @@
   color: $color;
   background: $background-color;
   transform: scale(102%);
-  transition-duration: 0.5s;
 }
 
 @mixin flex-wrap($wrap, $justify-content, $align-items: null) {

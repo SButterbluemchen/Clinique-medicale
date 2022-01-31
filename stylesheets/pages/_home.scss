@@ -8,7 +8,7 @@
   align-items: center;
   background: url(../img/home-hero-image.webp) no-repeat fixed;
   background-size: 250%;
-  height: 100vh;
+  height: 90vh;
   text-align: center;
   margin: 0em -1.5em 2em -1.5em;
   @include media(desktop) {
@@ -34,7 +34,7 @@
     color: $secondary-color;
   }
   @include media(desktop) {
-    width: 60%;
+    width: 50%;
   }
   div {
     line-height: 1.5;

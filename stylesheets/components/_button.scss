@@ -8,6 +8,8 @@
   padding: 0.7em 3em;
   margin: 1em;
   display: inline-block;
+  max-width: 18em;
+  text-align: center;
   &:hover {
     @include hover(white, $primary-color);
   }

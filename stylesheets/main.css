@@ -769,6 +769,8 @@ footer {
   padding: 0.7em 3em;
   margin: 1em;
   display: inline-block;
+  max-width: 18em;
+  text-align: center;
 }
 
 .btn--empty:hover {
@@ -776,8 +778,6 @@ footer {
   background: #0063A0;
   -webkit-transform: scale(102%);
           transform: scale(102%);
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
 }
 
 .btn-menu {
@@ -862,7 +862,7 @@ footer {
           align-items: center;
   background: url(../img/home-hero-image.webp) no-repeat fixed;
   background-size: 250%;
-  height: 100vh;
+  height: 90vh;
   text-align: center;
   margin: 0em -1.5em 2em -1.5em;
 }
@@ -895,7 +895,7 @@ footer {
 
 @media only screen and (min-width: 900px) {
   .home-main-content {
-    width: 60%;
+    width: 50%;
   }
 }
 
@@ -1252,6 +1252,155 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.carousel {
+  margin: 4em auto;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 0.2em 0 0 0.2em;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+@media only screen and (min-width: 900px) {
+  .prev:hover,
+  .next:hover {
+    -webkit-transform: scale(102%);
+            transform: scale(102%);
+    background-color: rgba(61, 59, 59, 0.199);
+  }
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 1em;
+  width: 1em;
+  margin: 0 0.2em;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.dot:hover,
+.dot.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.gmap2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1em auto 4em auto;
+  -webkit-column-gap: 3em;
+          column-gap: 3em;
+}
+
+.gmap2 h4,
+.gmap2 p {
+  text-align: left;
+  margin-left: 0;
+}
+
+.gmap2 article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.gmap2 article .btn--empty {
+  margin-left: 0;
+  margin-top: 1.5em;
+}
+
+.gmap2 article > p {
+  line-height: 1em;
+}
+
+.gmap2 iframe {
+  width: 95vw;
+  height: 40vh;
+  margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 900px) {
+  .gmap2 iframe {
+    max-width: 50vw;
+    height: 50vh;
+  }
 }
 
 .container-book {
