@@ -1055,28 +1055,12 @@ footer {
   padding: 5em 1.5em;
 }
 
-<<<<<<< Updated upstream
-p {
-  margin: 1em 0.3em 2em 0.3em;
-=======
-<<<<<<< Updated upstream
-@media only screen and (min-width: 900px) {
-  .home-image-wrapper h2 {
-    margin: 3em 0em 0em 0em;
-  }
-}
-
-.home-image-wrapper p {
-  margin: 1em 0.3em;
-=======
 .home-image-wrapper p {
   margin: 1em 0.3em 2em 0.3em;
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 }
 
 @media only screen and (min-width: 900px) {
-  p {
+  .home-image-wrapper p {
     text-align: center;
   }
 }
