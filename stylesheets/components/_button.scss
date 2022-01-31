@@ -11,7 +11,22 @@
   max-width: 18em;
   text-align: center;
   &:hover {
-    @include hover(white, $primary-color);
+    @include hover($secondary-color, $primary-color);
+  }
+}
+
+.btn--filled {
+  color: $secondary-color;
+  border: 0.1em solid $primary-color;
+  background: $primary-color;
+  padding: 0.7em 3em;
+  margin: 0.5em;
+  display: inline-block;
+  max-width: 18em;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    transform: scale(102%);
   }
 }
 
