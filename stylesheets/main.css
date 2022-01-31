@@ -368,7 +368,7 @@ html {
 
 @media only screen and (min-width: 900px) {
   html {
-    font-size: 3.25em;
+    font-size: 2.86em;
     font-size: 1.95em;
     font-size: 1.82em;
     font-size: 1.56em;
@@ -421,7 +421,7 @@ h1, h2, h3, h4 {
 
 h1 {
   font-weight: 500;
-  font-size: 2.5em;
+  font-size: 2.2em;
   text-transform: uppercase;
 }
 
@@ -886,11 +886,17 @@ footer {
   margin: 2em auto;
 }
 
+.home-main-content {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 2em 1em;
+  position: relative;
+}
+
 .home-main-content h1,
 .home-main-content h3,
 .home-main-content h4,
 .home-main-content p {
-  color: #ffffff;
+  color: #3c4549;
 }
 
 @media only screen and (min-width: 900px) {
@@ -904,8 +910,31 @@ footer {
 }
 
 .home-main-content div a {
-  color: white;
   text-decoration: none;
+}
+
+.main-logo {
+  position: absolute;
+  margin-top: 2em;
+  top: 3.5em;
+  z-index: 1;
+  max-width: 7em;
+}
+
+@media only screen and (min-width: 900px) {
+  .main-logo {
+    max-width: 8em;
+    top: 5em;
+  }
+}
+
+.main-logo img {
+  width: 100%;
+  border: 0.1em solid #0063A0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 0;
+  margin: 0;
 }
 
 @media only screen and (min-width: 900px) {

@@ -27,11 +27,14 @@
 }
 
 .home-main-content {
+  background: rgba($color: $secondary-color, $alpha: 0.7);
+  padding: 2em 1em;
+  position: relative;
   h1,
   h3,
   h4,
   p {
-    color: $secondary-color;
+    color: $text-color;
   }
   @include media(desktop) {
     width: 50%;
@@ -39,9 +42,27 @@
   div {
     line-height: 1.5;
     a {
-      color: white;
       text-decoration: none;
     }
+  }
+}
+
+.main-logo {
+  position: absolute;
+  margin-top: 2em;
+  top: 3.5em;
+  z-index: 1;
+  max-width: 7em;
+  @include media (desktop) {
+    max-width: 8em;
+    top: 5em;
+  }
+  img {
+    width: 100%;
+    border: 0.1em solid $primary-color;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
   }
 }
 
