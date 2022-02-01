@@ -22,6 +22,11 @@
 }
 
 @mixin media($breakpoint) {
+  @if $breakpoint==mobile {
+    @media only screen and (max-width: 599px) {
+      @content;
+    }
+  }
   @if $breakpoint==tablet {
     @media only screen and (min-width: 600px) {
       @content;
@@ -32,8 +37,13 @@
       @content;
     }
   }
-  @if $breakpoint==mobile {
-    @media only screen and (max-width: 599px) {
+  @if $breakpoint==screen {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+  @if $breakpoint==tv {
+    @media only screen and (min-width: 1600px) {
       @content;
     }
   }
@@ -43,8 +53,8 @@
   @media only screen and (min-width: 900px) {
     @each $fontsize, $value in $fontsizes {
       font-size: $value * 1.3;
+    }
   }
-  }   
 }
 
 /// Event wrapper
