@@ -15,7 +15,10 @@
     background-size: 100%;
   }
   h1 {
-    margin: 1em;
+    margin-top: 1em;
+  }
+  h3 {
+    margin: 1em 0em;
   }
   div {
     margin: 2em auto;
@@ -39,7 +42,11 @@
     }
     @include media(desktop) {
       padding: 3.5em 0em;
-      margin-top: 1em;
+      margin-top: 2em;
+    }
+    @include media(screen) {
+      padding: 3.5em 0em;
+      margin-top: 4.5em;
     }
     @include media(screen) {
       padding: 3.5em 0em;
@@ -53,12 +60,18 @@
 
 .main-logo {
   position: absolute;
-  top: 6em;
+  top: 5.5em;
   z-index: 1;
   max-width: 6em;
   @include media (desktop) {
     max-width: 8em;
-    top: 7.5em;
+    top: 6.5em;
+  }
+  @include media (desktopXL) {
+    top: 5em;
+  }
+  @include media (tv) {
+    top: 16em;
   }
   @include media (desktopXL) {
     top: 5em;
@@ -171,7 +184,7 @@
 }
 
 .home-service-container {
-  max-width: 90%;
+  max-width: 85%;
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));

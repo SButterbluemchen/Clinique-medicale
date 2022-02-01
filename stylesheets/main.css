@@ -898,7 +898,11 @@ footer {
 }
 
 .home-main-container h1 {
-  margin: 1em;
+  margin-top: 1em;
+}
+
+.home-main-container h3 {
+  margin: 1em 0em;
 }
 
 .home-main-container div {
@@ -920,7 +924,14 @@ footer {
   background: rgba(255, 255, 255, 0.8);
   border: 0.2em solid #0063A0;
   padding: 2em 0em;
-  margin-top: -3em;
+  margin-top: -1.5em;
+}
+
+@media only screen and (min-width: 600px) {
+  .home-main-content div, .contact-main-content div {
+    padding: 1.5em 0em;
+    margin-top: 2em;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -933,7 +944,14 @@ footer {
 @media only screen and (min-width: 900px) {
   .home-main-content div, .contact-main-content div {
     padding: 3.5em 0em;
-    margin-top: 1em;
+    margin-top: 2em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .home-main-content div, .contact-main-content div {
+    padding: 3.5em 0em;
+    margin-top: 4.5em;
   }
 }
 
@@ -950,7 +968,7 @@ footer {
 
 .main-logo {
   position: absolute;
-  top: 6em;
+  top: 5.5em;
   z-index: 1;
   max-width: 6em;
 }
@@ -958,7 +976,13 @@ footer {
 @media only screen and (min-width: 900px) {
   .main-logo {
     max-width: 8em;
-    top: 7.5em;
+    top: 6.5em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .main-logo {
+    top: 16em;
   }
 }
 
@@ -1104,7 +1128,7 @@ footer {
 }
 
 .home-service-container {
-  max-width: 90%;
+  max-width: 85%;
   list-style: none;
   display: -ms-grid;
   display: grid;
