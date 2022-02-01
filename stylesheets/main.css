@@ -892,11 +892,7 @@ footer {
 }
 
 .home-main-container h1 {
-  margin-top: 1em;
-}
-
-.home-main-container h3 {
-  margin: 1em 0em;
+  margin: 1em;
 }
 
 .home-main-container div {
@@ -918,13 +914,13 @@ footer {
   background: rgba(255, 255, 255, 0.8);
   border: 0.2em solid #0063A0;
   padding: 2em 0em;
-  margin-top: -1.5em;
+  margin-top: -3em;
 }
 
 @media only screen and (min-width: 900px) {
   .home-main-content div, .contact-main-content div {
     padding: 3.5em 0em;
-    margin-top: 2em;
+    margin-top: 1em;
   }
 }
 
@@ -934,7 +930,7 @@ footer {
 
 .main-logo {
   position: absolute;
-  top: 5.5em;
+  top: 6em;
   z-index: 1;
   max-width: 6em;
 }
@@ -942,7 +938,7 @@ footer {
 @media only screen and (min-width: 900px) {
   .main-logo {
     max-width: 8em;
-    top: 6.5em;
+    top: 7.5em;
   }
 }
 
@@ -1066,7 +1062,7 @@ footer {
 }
 
 .home-service-container {
-  max-width: 85%;
+  max-width: 90%;
   list-style: none;
   display: -ms-grid;
   display: grid;
