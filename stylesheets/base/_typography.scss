@@ -31,6 +31,10 @@ h4 {
 }
 
 h5 {
+  @include headingstyle(normal, h5)
+}
+
+h5 {
   margin: 0.2em;
   text-align: center;
 }
@@ -38,4 +42,8 @@ h5 {
 p {
   margin: 0.5em 0em;
   @include headingstyle(normal, p)
+}
+
+.bold {
+  font-weight: map-get($map: $fontweights, $key: extra-bold);
 }

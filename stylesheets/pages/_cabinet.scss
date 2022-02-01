@@ -1,0 +1,127 @@
+// -----------------------------------------------------------------------------
+// CAROUSEL
+// -----------------------------------------------------------------------------
+.carousel {
+  margin: 4em auto;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 0.2em 0 0 0.2em;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+@include media(desktop) {
+  .prev:hover,
+  .next:hover {
+    transform: scale(102%);
+    background-color: rgba(61, 59, 59, 0.199);
+  }
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 1em;
+  width: 1em;
+  margin: 0 0.2em;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot:hover,
+.dot.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// GOOGLE MAPS
+// -----------------------------------------------------------------------------
+.gmap2 {
+  @include flex-wrap(wrap, center);
+  margin: 1em auto 4em auto;
+  column-gap: 3em;
+  h4,
+  p {
+    text-align: left;
+    margin-left: 0;
+  }
+  article {
+    display: flex;
+    flex-direction: column;
+    .btn--empty {
+      margin-left: 0;
+      margin-top: 1.5em;
+    }
+    > p {
+      line-height: 1em;
+    }
+  }
+  iframe {
+    width: 95vw;
+    height: 40vh;
+    margin-bottom: 1em;
+    @include media(desktop) {
+      max-width: 50vw;
+      height: 50vh;
+    }
+  }
+}

@@ -11,8 +11,7 @@
 @mixin hover($color, $background-color) {
   color: $color;
   background: $background-color;
-  transform: scale(104%);
-  transition-duration: 0.5s;
+  transform: scale(102%);
 }
 
 @mixin flex-wrap($wrap, $justify-content, $align-items: null) {
@@ -24,12 +23,17 @@
 
 @mixin media($breakpoint) {
   @if $breakpoint==tablet {
-    @media only screen and (min-width: 599px) {
+    @media only screen and (min-width: 600px) {
       @content;
     }
   }
   @if $breakpoint==desktop {
     @media only screen and (min-width: 900px) {
+      @content;
+    }
+  }
+  @if $breakpoint==mobile {
+    @media only screen and (max-width: 599px) {
       @content;
     }
   }

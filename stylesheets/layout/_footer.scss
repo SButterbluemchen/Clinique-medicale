@@ -9,7 +9,7 @@ footer {
 }
 
 .footer-content {
-  @include flex-wrap(wrap, flex-end, center);
+  @include flex-wrap(wrap, space-evenly, center);
   article {
     width: 25em;
   }
@@ -21,7 +21,6 @@ footer {
   }
   p {
     margin: 0.5em 0em;
-    line-height: 1.8em;
     a {
       color: $secondary-color;
     }
@@ -62,7 +61,7 @@ footer {
 .copyright {
   @include headingstyle(light, small);
   p {
-    margin: 2em 0em 0em 0em;
+    margin: 3em 0em 0em 0em;
     text-align: center;
   }
 }
