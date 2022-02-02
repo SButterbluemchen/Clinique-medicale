@@ -65,6 +65,7 @@
 }
 
 .panel {
+  @include flex-wrap(wrap, center);
   padding: 0em 1em;
   background: $secondary-color;
   overflow: hidden;
@@ -74,6 +75,37 @@
     max-width: 70%;
     margin: auto;
   }
+  figure {
+    max-width: 18em;
+    img {
+      width: 100%;
+      margin-top: 1em;
+      object-fit: cover;
+    }
+  }
+  p {
+    @include media(tablet) {
+      max-width: 60%;
+      margin: auto;
+    }
+  }
+}
+
+.border-test {
+  outline: 0.2em solid $primary-color;
+}
+
+.border-test2 {
+  border: 0.5em solid $secondary-color;
+  outline: 0.2em solid $primary-color;
+}
+
+.border-test3 {
+  box-shadow: 0 0 0.5em grey, 0.1em 0.1em 1em 1em white;
+}
+
+.border-test4 {
+  box-shadow: 0.2em 0.2em 0em $primary-color, -0.2em -0.2em 0em $primary-color;
 }
 
 //add icons
@@ -95,5 +127,8 @@
 // -----------------------------------------------------------------------------
 
 .members-button {
-  @include flex-wrap(nowrap, center, $align-items: null);
+  @include flex-wrap(wrap, center, center);
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
 }

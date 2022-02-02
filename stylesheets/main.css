@@ -1096,6 +1096,14 @@ footer {
   width: 100%;
 }
 
+.home-service-container div h4:nth-of-type(1) {
+  margin-bottom: 0em;
+}
+
+.home-service-container div h4:nth-of-type(2) {
+  margin-top: 0em;
+}
+
 .home-team-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1229,6 +1237,14 @@ footer {
 }
 
 .panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0em 1em;
   background: #ffffff;
   overflow: hidden;
@@ -1242,6 +1258,43 @@ footer {
     max-width: 70%;
     margin: auto;
   }
+}
+
+.panel figure {
+  max-width: 18em;
+}
+
+.panel figure img {
+  width: 100%;
+  margin-top: 1em;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media only screen and (min-width: 600px) {
+  .panel p {
+    max-width: 60%;
+    margin: auto;
+  }
+}
+
+.border-test {
+  outline: 0.2em solid #0063A0;
+}
+
+.border-test2 {
+  border: 0.5em solid #ffffff;
+  outline: 0.2em solid #0063A0;
+}
+
+.border-test3 {
+  -webkit-box-shadow: 0 0 0.5em grey, 0.1em 0.1em 1em 1em white;
+          box-shadow: 0 0 0.5em grey, 0.1em 0.1em 1em 1em white;
+}
+
+.border-test4 {
+  -webkit-box-shadow: 0.2em 0.2em 0em #0063A0, -0.2em -0.2em 0em #0063A0;
+          box-shadow: 0.2em 0.2em 0em #0063A0, -0.2em -0.2em 0em #0063A0;
 }
 
 .accordion::after {
@@ -1263,11 +1316,19 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .cabinet-main div {
