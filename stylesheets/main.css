@@ -546,12 +546,6 @@ nav a {
   padding: 0.2em 0.5em;
 }
 
-@media only screen and (min-width: 1200px) {
-  .menu li a {
-    padding: 0.2em 0em;
-  }
-}
-
 .menu li.subitem a {
   padding: 0.3em 1em;
   font-weight: 300;
@@ -924,42 +918,6 @@ footer {
   background: rgba(255, 255, 255, 0.8);
   border: 0.2em solid #0063A0;
   padding: 2em 0em;
-  margin-top: -1.5em;
-}
-
-@media only screen and (min-width: 600px) {
-  .home-main-content div, .contact-main-content div {
-    padding: 1.5em 0em;
-    margin-top: 2em;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  .home-main-content div, .contact-main-content div {
-    padding: 1.5em 0em;
-    margin-top: 2em;
-  }
-}
-
-@media only screen and (min-width: 900px) {
-  .home-main-content div, .contact-main-content div {
-    padding: 3.5em 0em;
-    margin-top: 2em;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .home-main-content div, .contact-main-content div {
-    padding: 3.5em 0em;
-    margin-top: 4.5em;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .home-main-content div, .contact-main-content div {
-    padding: 3.5em 0em;
-    margin-top: 4.5em;
-  }
 }
 
 .home-main-content div a, .contact-main-content div a {
@@ -968,28 +926,12 @@ footer {
 
 .main-logo {
   position: absolute;
-  top: 5.5em;
+  top: -5%;
   z-index: 1;
   max-width: 6em;
-}
-
-@media only screen and (min-width: 900px) {
-  .main-logo {
-    max-width: 8em;
-    top: 6.5em;
-  }
-}
-
-@media only screen and (min-width: 1600px) {
-  .main-logo {
-    top: 16em;
-  }
-}
-
-@media only screen and (min-width: 1600px) {
-  .main-logo {
-    top: 16em;
-  }
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
 }
 
 .main-logo img {
