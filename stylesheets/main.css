@@ -546,6 +546,12 @@ nav a {
   padding: 0.2em 0.5em;
 }
 
+@media only screen and (min-width: 1200px) {
+  .menu li a {
+    padding: 0.2em 0em;
+  }
+}
+
 .menu li.subitem a {
   padding: 0.3em 1em;
   font-weight: 300;
@@ -917,10 +923,24 @@ footer {
   margin-top: -3em;
 }
 
+@media only screen and (min-width: 600px) {
+  .home-main-content div, .contact-main-content div {
+    padding: 1.5em 0em;
+    margin-top: 2em;
+  }
+}
+
 @media only screen and (min-width: 900px) {
   .home-main-content div, .contact-main-content div {
     padding: 3.5em 0em;
     margin-top: 1em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .home-main-content div, .contact-main-content div {
+    padding: 3.5em 0em;
+    margin-top: 4.5em;
   }
 }
 
@@ -939,6 +959,12 @@ footer {
   .main-logo {
     max-width: 8em;
     top: 7.5em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .main-logo {
+    top: 16em;
   }
 }
 
@@ -991,6 +1017,13 @@ footer {
   }
 }
 
+@media only screen and (min-width: 600px) {
+  .home-intro-container article div {
+    max-width: 40%;
+    margin-left: 1em;
+  }
+}
+
 .home-intro-container article div h4 {
   margin: 0.5em 0em;
 }
@@ -1005,7 +1038,7 @@ footer {
 
 @media only screen and (min-width: 900px) {
   .home-intro-container article figure {
-    width: 30em;
+    width: 20em;
   }
 }
 
@@ -1025,6 +1058,15 @@ footer {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .home-intro-2 figure {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-left: 1em;
   }
 }
 

@@ -32,10 +32,18 @@
     background: rgba($color: $secondary-color, $alpha: 0.8);
     border: 0.2em solid $primary-color;
     padding: 2em 0em;
-    margin-top: -3em;
+    margin-top: -1.5em;
+    @include media(tablet) {
+      padding: 1.5em 0em;
+      margin-top: 2em;
+    }
     @include media(desktop) {
       padding: 3.5em 0em;
       margin-top: 1em;
+    }
+    @include media(screen) {
+      padding: 3.5em 0em;
+      margin-top: 4.5em;
     }
     a {
       text-decoration: none;
@@ -51,6 +59,12 @@
   @include media (desktop) {
     max-width: 8em;
     top: 7.5em;
+  }
+  @include media (desktopXL) {
+    top: 5em;
+  }
+  @include media (tv) {
+    top: 16em;
   }
   img {
     width: 100%;
@@ -85,6 +99,10 @@
       @include media(desktop) {
         max-width: 40%;
       }
+      @include media(tablet) {
+        max-width: 40%;
+        margin-left: 1em;
+      }
       h4 {
         margin: 0.5em 0em;
       }
@@ -95,7 +113,7 @@
     figure {
       width: 21em;
       @include media(desktop) {
-        width: 30em;
+        width: 20em;
       }
       img {
         width: 100%;
@@ -116,6 +134,10 @@
   figure {
     @include media(desktop) {
       order: 1;
+    }
+    @include media(tablet) {
+      order: 1;
+      margin-left: 1em;
     }
   }
   div {
@@ -167,63 +189,6 @@
     }
   }
 }
-
-// .home-image-wrapper {
-//   // background: $fourth-color;
-//   text-align: justify;
-//   margin: 3em 0em 5em 0em;
-//   h2 {
-//     @include media(desktop) {
-//       margin: 3em 0em 0em 0em;
-//     }
-//   }
-//   p {
-//     margin: 1em 0.3em;
-//     @include media(desktop) {
-//     text-align: center;
-//     }
-//   }
-// }
-// .home-image-container {
-//   display: grid;
-//   grid-template-columns: repeat(auto-fit, minmax(13em, 1fr));
-//   gap: 2em;
-//   @include media(desktop) {
-//     margin: 0em 4em;
-//   }
-//   li {
-//     list-style: none;
-//     position: relative;
-//     h4 {
-//       background: rgba($secondary-color, 0.6);
-//       padding: 1.2em;
-//       margin: 0em;
-//       position: absolute;
-//       top: 8em;
-//       width: 100%;
-//       @include media(desktop) {
-//         &:hover {
-//           transform: scale(104%);
-//           transition-duration: 0.5s;
-//         }
-//       }
-//     }
-//     figure {
-//       height: 350px;
-//       width: 100%;
-//       @include media(desktop) {
-//         height: 450px;
-//         width: 100%;
-//       }
-//     }
-//     img {
-//       width: 100%;
-//       max-height: 100%;
-//       object-fit: cover;
-//       object-position: 50% 50%;
-//     }
-//   }
-// }
 
 // -----------------------------------------------------------------------------
 // FOURTH TEAM SECTION
