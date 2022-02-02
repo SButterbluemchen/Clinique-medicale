@@ -1,101 +1,83 @@
-// To modify home-main-container, go to home.scss
-.contact-main-content {
-  @extend .home-main-content;
-  color: $secondary-color;
-  h1,
-  h4 {
-    color: $secondary-color;
-  }
-}
+// // To modify home-main-container, go to home.scss
+// .contact-main-content {
+//   @extend .home-main-content;
+//   color: $secondary-color;
+//   h1,
+//   h4 {
+//     color: $secondary-color;
+//   }
+// }
 
-// -----------------------------------------------------------------------------
-// SECOND SECTION - Blocks doctolib and call
-// -----------------------------------------------------------------------------
+// // -----------------------------------------------------------------------------
+// // DOCTOLIB AND PHONE
+// // -----------------------------------------------------------------------------
 
-.container-book {
-  @include flex-wrap(wrap, center);
-  gap: 4em;
-  margin-bottom: 3em;
-}
+// .container-book {
+//   @include flex-wrap(wrap, center);
+//   gap: 4em;
+// }
 
-.block-book {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: -1.5em 1.5em 0em 1.5em;
-  padding: 3em 1em;
-  border: 0.1em solid rgb(235, 235, 235);
-  height: 22em;
-  width: 26em;
-  z-index: 1;
-  background: $secondary-color;
-  @include media(desktop) {
-    transition: 0.5s ease-in-out;
-    margin: -4em 1.5em 3em 1.5em;
-    &:hover {
-      box-shadow: 1px 2px 10px rgba(165, 161, 161, 0.445),
-        -1px 0 10px rgba(165, 161, 161, 0.445);
-      transform: translateY(-3em);
-    }
-  }
-  figure {
-    max-width: 3em;
-    img {
-      width: 100%;
-      object-fit: cover;
-      margin: 0.5em 0em;
-    }
-  }
-}
+// .block-book {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   text-align: center;
+//   border: 0.1em solid rgb(235, 235, 235);
+//   height: 13em;
+//   width: 30em;
+//   z-index: 1;
+//   background: $secondary-color;
+//   @include media(desktop) {
+//     transition: 0.5s ease-in-out;
+//     &:hover {
+//       box-shadow: 1px 2px 10px rgba(165, 161, 161, 0.445),
+//         -1px 0 10px rgba(165, 161, 161, 0.445);
+//       transform: translateY(-0.5em);
+//     }
+//   }
+//   figure {
+//     max-width: 2.5em;
+//     img {
+//       width: 100%;
+//       object-fit: cover;
+//       margin: 0.2em 0em;
+//     }
+//   }
+// }
 
-.doctolib-logo {
-  min-width: 11em;
-  margin: 2em;
-  &:hover {
-    transform: scale(104%);
-    transition-duration: 0.5s;
-  }
-}
+// .doctolib-logo {
+//   min-width: 8em;
+//   margin: 0.5em;
+//   &:hover {
+//     transform: scale(104%);
+//     transition-duration: 0.5s;
+//   }
+// }
 
-// -----------------------------------------------------------------------------
-// THIRD SECTION - GOOGLE MAPS
-// -----------------------------------------------------------------------------
-.gmap {
-  @include flex-wrap(nowrap, center);
-  margin: 1.5em 0em;
-  iframe {
-    width: 90vw;
-    height: 50vh;
-    @include media(desktop) {
-      max-width: 80vw;
-      height: 70vh;
-    }
-  }
-}
 
-// -----------------------------------------------------------------------------
-// FOURTH SECTION - METRO, BUS, BIKE
-// -----------------------------------------------------------------------------
-.container-access {
-  @include flex-wrap(wrap, flex-start);
-  gap: 1.5em;
-  margin: 1.5em;
-  @include media(desktop) {
-    @include flex-wrap(wrap, center);
-    gap: 5.5em;
-  }
-}
+// // -----------------------------------------------------------------------------
+// // FOURTH SECTION - METRO, BUS, BIKE
+// // -----------------------------------------------------------------------------
+// .container-access {
+//   @include flex-wrap(wrap, flex-start);
+//   gap: 1.5em;
+//   margin: 1.5em;
+//   @include media(desktop) {
+//     @include flex-wrap(wrap, center);
+//     gap: 5.5em;
+//   }
+// }
 
-.block-access {
-  display: flex;
-  figure {
-    max-width: 2em;
-    height: auto;
-    margin: 0.2em;
-    img {
-      width: 100%;
-      object-fit: cover;
-    }
-  }
-}
+// .block-access {
+//   display: flex;
+//   figure {
+//     max-width: 2em;
+//     height: auto;
+//     margin: 0.2em;
+//     img {
+//       width: 100%;
+//       object-fit: cover;
+//     }
+//   }
+// }
