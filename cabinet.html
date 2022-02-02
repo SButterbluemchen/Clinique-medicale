@@ -77,13 +77,7 @@
             <li class="subitem"><a href="shoulder.html">Posturologie</a></li>
           </ul>
         </li>
-        <li class="item has-submenu">
-          <a tabindex="0">Notre Cabinet<img src="img/chevron-en-bas.png" alt="sous-menu bouton"></a>
-          <ul class="submenu">
-            <li class="subitem"><a href="shoulder.html">Notre cabinet</a></li>
-            <li class="subitem"><a href="contact.html">Contact</a></li>
-          </ul>
-        </li>
+        <li class="item"><a href="cabinet.html">Notre Cabinet</a></li>
         <li class="item btn-menu"><a href="https://www.doctolib.fr/medecin-du-sport/lille/gautier-taillaint?utm_source=website">Prendre rendez-vous</a></li>
         <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
       </ul>
@@ -92,32 +86,29 @@
   <!-- UP BUTTON -->
   <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/up-arrow.png" alt="top button"></button>
   <main class="home-main-container">
-    <article class="home-main-content wrapper">
-    <h2>
-      Bienvenu dans notre cabinet
-    </h2>
-    <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <p>Molestias, deserunt sequi, repellat repellendus eligendi, voluptatibus distinctio soluta dignissimos esse totam sed enim voluptates architecto! Consequatur possimus neque nulla esse? Saepe?</p>
-    </div>
-    <a class="btn--empty" href="https://www.doctolib.fr/medecin-du-sport/lille/gautier-taillaint?utm_source=website" target="_blank">Réserver</a>
-  </article>
+    <article class="home-main-content wrapper cabinet-main">
+      <div>  
+        <h2>
+          Bienvenue dans notre cabinet
+        </h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos labore necessitatibus ab saepe voluptates recusandae, placeat qui molestias aspernatur enim quasi incidunt magni obcaecati delectus rem sed, mollitia tempore laborum.</p>
+      </div>
+    </article>
   </main>
-
 <section class="carousel">
-  <h2>Bienvenu dans notre cabinet</h2>
+  <h2>Découvrez notre cabinet</h2>
   <!-- Slideshow container -->
   <div class="slideshow-container">
     <!-- Full-width images with number and caption text -->
-    <div class="mySlides fade">
-      <img src="../img/slider1.png" alt="notre cabinet" style="width:100%">
-    </div>
-    <div class="mySlides fade">
-      <img src="../img/slider2.png" alt="notre cabinet" style="width:100%">
-    </div>
-    <div class="mySlides fade">
-      <img src="../img/slider3.png" alt="notre cabinet" style="width:100%">
-    </div>
+    <figure class="mySlides fade">
+      <img src="img/slider1.png" alt="notre cabinet" style="width:100%">
+    </figure>
+    <figure class="mySlides fade">
+      <img src="img/slider2.png" alt="notre cabinet" style="width:100%">
+    </figure>
+    <figure class="mySlides fade">
+      <img src="img/slider3.png" alt="notre cabinet" style="width:100%">
+    </figure>
     <!-- Next and previous buttons -->
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -130,21 +121,6 @@
     <span class="dot" onclick="currentSlide(3)"></span>
   </div>
 </section>
-
-  <h2>Rendez-nous visite</h2>
-    <!-- Google maps -->
-  <section class="gmap2">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2531.1906430828344!2d3.0409643159484747!3d50.623575182755786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d573f9c3977d%3A0x4d7035aa16d8e6f4!2s78%20Bd%20Montebello%2C%2059000%20Lille!5e0!3m2!1sen!2sfr!4v1641429768920!5m2!1sen!2sfr" 
-    style="border:0;" loading="lazy">
-    </iframe> 
-      <article>
-        <h4>Adresse</h4>
-        <p><strong>Cabinet ostéo-articulaire & pathologies du sportif</strong></p>
-        <p>78 boulevard montebello, 59000 Lille</p>
-        <a class="phone-number">03 76 05 77 48</a>
-        <a class="btn--empty" href="https://www.doctolib.fr/medecin-du-sport/lille/gautier-taillaint?utm_source=website" target="_blank">Prenez rendez-vous</a>
-      </article>
-  </section>
 <section>
   <h2>Notre équipe</h2>
   <ul class="home-team-container">
@@ -187,6 +163,137 @@
     </li>
   </ul>
 </section>
+
+<!-- Google maps -->
+<section class="contact-container">
+  <h2>Contactez-nous</h2>
+  <section class="contact-grid">
+    <article class="googlemap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2531.1906430828344!2d3.0409643159484747!3d50.623575182755786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d573f9c3977d%3A0x4d7035aa16d8e6f4!2s78%20Bd%20Montebello%2C%2059000%20Lille!5e0!3m2!1sen!2sfr!4v1641429768920!5m2!1sen!2sfr" 
+      style="border:0;" loading="lazy">
+      </iframe> 
+    </article>
+    <section>
+      <article class="address-container">
+        <h4>Adresse</h4>
+        <p><strong>Cabinet ostéo-articulaire & pathologies du sportif</strong></p>
+        <p>78 boulevard montebello, 59000 Lille</p>
+        <a class="phone-number">03 76 05 77 48</a>
+        <div>
+          <p>Horaires :</p>
+          <p>lundi - vendredi : 8h30 - 19h00</p>
+          <p>samedi : 9h00 - 13h00</p>
+        </div>
+        <a class="btn--filled" href="https://www.doctolib.fr/medecin-du-sport/lille/gautier-taillaint?utm_source=website" target="_blank">Prenez rendez-vous</a>
+      </article>
+      <article class="access-container">
+        <h4>Accès</h4>
+        <p class="contact-clic">Cliquez sur l'adresse pour voir l'itinéraire</p>
+        <article class="block-access">
+          <figure>
+            <img src="img/logo-metro.png" alt="Accès Metro logo">
+          </figure>
+          <div>
+            <p><span class="bold">Ligne 1</span> : <a href="https://www.google.com/maps/dir/Porte+des+Postes,+Lille/78+Boulevard+Montebello,+Lille/@50.6248694,3.0407142,18z/data=!4m14!4m13!1m5!1m1!1s0x47c2d5a01ee4d731:0xe8f44cb3dce02718!2m2!1d3.0500813!2d50.6183131!1m5!1m1!1s0x47c2d573f9c3977d:0x4d7035aa16d8e6f4!2m2!1d3.043153!2d50.6235718!3e2" target="_blank">Porte de postes</a></p>
+            <p><span class="bold">Ligne 2</span> : <a href="https://www.google.com/maps/dir/Cormontaigne,+Lille/78+Boulevard+Montebello,+Lille/@50.6248694,3.0407142,18z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47c2d571af810601:0x3f772af16b1c87e8!2m2!1d3.0402811!2d50.6261636!1m5!1m1!1s0x47c2d573f9c3977d:0x4d7035aa16d8e6f4!2m2!1d3.043153!2d50.6235718!3e2" target="_blank">Cormontaigne</a></p>
+            </div>
+        </article>
+        <article class="block-access">
+          <figure>
+            <img src="img/logo-parking.png" alt="Accès Parking logo">
+          </figure>
+          <div>
+            <p><a href="https://www.google.com/maps/dir/Zenpark+-+Parking+Lille+-+Cormontaigne+-+B%C3%A9ranger,+6+Rue+B%C3%A9ranger,+59800+Lille/78+Bd+Montebello,+59000+Lille/@50.6228947,3.0393457,18z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47c2d5ffd3928457:0xb2d1e808a1bd339b!2m2!1d3.0371624!2d50.622024!1m5!1m1!1s0x47c2d573f9c3977d:0x4d7035aa16d8e6f4!2m2!1d3.043153!2d50.6235718!3e2" target="_blank">Zenpark - Cormontaigne<br>(Rue Béranger)</a></p>
+          </div>
+        </article>
+        <article class="block-access">
+          <figure>
+            <img src="img/logo-bus.png" alt="Accès Bus logo">
+          </figure>
+          <div>
+            <p><span class="bold">L5</span> : <a href="https://www.google.com/maps/dir/Cormontaigne,+Lille/78+Boulevard+Montebello,+Lille/@50.6248694,3.0407142,18z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47c2d571af810601:0x3f772af16b1c87e8!2m2!1d3.0402811!2d50.6261636!1m5!1m1!1s0x47c2d573f9c3977d:0x4d7035aa16d8e6f4!2m2!1d3.043153!2d50.6235718!3e2" target="_blank">Cormontaigne</a></p>
+            <p><span class="bold">CITL</span> : <a href="https://www.google.com/maps/dir/Cormontaigne,+Lille/78+Boulevard+Montebello,+Lille/@50.6248694,3.0407142,18z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47c2d571af810601:0x3f772af16b1c87e8!2m2!1d3.0402811!2d50.6261636!1m5!1m1!1s0x47c2d573f9c3977d:0x4d7035aa16d8e6f4!2m2!1d3.043153!2d50.6235718!3e2" target="_blank">Cormontaigne</a></p>
+            <p><span class="bold">L92</span> : <a href="https://www.google.com/maps/dir/Porte+des+Postes,+Lille/78+Boulevard+Montebello,+Lille/@50.6248694,3.0407142,18z/data=!4m14!4m13!1m5!1m1!1s0x47c2d5a01ee4d731:0xe8f44cb3dce02718!2m2!1d3.0500813!2d50.6183131!1m5!1m1!1s0x47c2d573f9c3977d:0x4d7035aa16d8e6f4!2m2!1d3.043153!2d50.6235718!3e2" target="_blank">Porte Des Postes</a></p>
+            <p><span class="bold">910</span> : <a href="https://www.google.com/maps/dir/Porte+des+Postes,+Lille/78+Boulevard+Montebello,+Lille/@50.6248694,3.0407142,18z/data=!4m14!4m13!1m5!1m1!1s0x47c2d5a01ee4d731:0xe8f44cb3dce02718!2m2!1d3.0500813!2d50.6183131!1m5!1m1!1s0x47c2d573f9c3977d:0x4d7035aa16d8e6f4!2m2!1d3.043153!2d50.6235718!3e2" target="_blank">Porte Des Postes</a></p>
+            </div>
+        </article>
+        <article class="block-access">
+          <figure>
+            <img src="img/logo-bike.png" alt="Accès Vélo logo">
+          </figure>
+          <div>
+            <p><a href="https://www.google.com/maps/dir/124+Bd+Montebello,+59000+Lille/78+Bd+Montebello,+59000+Lille/@50.6227379,3.0420867,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47c2d5745e881759:0x39d8bf6953750207!2m2!1d3.0449391!2d50.6217998!1m5!1m1!1s0x47c2d573f9c3977d:0x4d7035aa16d8e6f4!2m2!1d3.043153!2d50.6235718!3e2" target="_blank">124 Boulevard Montebello</a></p>
+            <p><a href="https://www.google.com/maps/dir/28+Pl.+Cormontaigne,+59000+Lille/78+Bd+Montebello,+59000+Lille/@50.6248943,3.0403536,18z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47c2d571b9ff945f:0x532287887b430992!2m2!1d3.0395599!2d50.6262021!1m5!1m1!1s0x47c2d573f9c3977d:0x4d7035aa16d8e6f4!2m2!1d3.043153!2d50.6235718!3e2" target="_blank">28 Place Cormontaigne </a></p>
+            <p><a href="https://www.google.com/maps/dir/Pl.+Barth%C3%A9l%C3%A9my+Dorez,+59000+Lille/78+Bd+Montebello,+59000+Lille/@50.6210887,3.0446225,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47c2d5a01c0018ed:0x19204c838c6cf7d2!2m2!1d3.0504693!2d50.6185015!1m5!1m1!1s0x47c2d573f9c3977d:0x4d7035aa16d8e6f4!2m2!1d3.043153!2d50.6235718!3e2" target="_blank">Place Barthélémy Dorez</a></p>
+          </div>
+        </article>
+      </article>
+    </section>
+  </section>
+</section>
+
+
+<!-- <section class="gmap2">
+  <h2>Contactez-nous</h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2531.1906430828344!2d3.0409643159484747!3d50.623575182755786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d573f9c3977d%3A0x4d7035aa16d8e6f4!2s78%20Bd%20Montebello%2C%2059000%20Lille!5e0!3m2!1sen!2sfr!4v1641429768920!5m2!1sen!2sfr" 
+style="border:0;" loading="lazy">
+</iframe> 
+  <article>
+    <h4>Adresse</h4>
+    <p><strong>Cabinet ostéo-articulaire & pathologies du sportif</strong></p>
+    <p>78 boulevard montebello, 59000 Lille</p>
+    <a class="phone-number">03 76 05 77 48</a>
+    <div>
+      <p>Horaires :</p>
+      <p>lundi - vendredi : 8h30 - 19h00</p>
+      <p>samedi : 9h00 - 13h00</p>
+    </div>
+    <a class="btn--filled" href="https://www.doctolib.fr/medecin-du-sport/lille/gautier-taillaint?utm_source=website" target="_blank">Prenez rendez-vous</a>
+    <article class="container-access">
+      <h4>Accès</h4>
+        <p class="contactaccessp">Cliquez pour voir l'itinéraire</p>
+      <article class="block-access">
+        <figure>
+          <img src="img/logo-metro.png" alt="Accès Metro logo">
+        </figure>
+        <div>
+          <p><span class="bold">Ligne 1</span> : <a href="https://www.google.com/maps/dir/Porte+des+Postes,+Lille/78+Boulevard+Montebello,+Lille/@50.6248694,3.0407142,18z/data=!4m14!4m13!1m5!1m1!1s0x47c2d5a01ee4d731:0xe8f44cb3dce02718!2m2!1d3.0500813!2d50.6183131!1m5!1m1!1s0x47c2d573f9c3977d:0x4d7035aa16d8e6f4!2m2!1d3.043153!2d50.6235718!3e2" target="_blank">Porte de postes</a></p>
+          <p><span class="bold">Ligne 2</span> : <a href="https://www.google.com/maps/dir/Cormontaigne,+Lille/78+Boulevard+Montebello,+Lille/@50.6248694,3.0407142,18z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47c2d571af810601:0x3f772af16b1c87e8!2m2!1d3.0402811!2d50.6261636!1m5!1m1!1s0x47c2d573f9c3977d:0x4d7035aa16d8e6f4!2m2!1d3.043153!2d50.6235718!3e2" target="_blank">Cormontaigne</a></p>
+          </div>
+      </article>
+      <article class="block-access">
+        <figure>
+          <img src="img/logo-bus.png" alt="Accès Bus logo">
+        </figure>
+        <div>
+          <p><span class="bold">L5</span> : <a href="https://www.google.com/maps/dir/Cormontaigne,+Lille/78+Boulevard+Montebello,+Lille/@50.6248694,3.0407142,18z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47c2d571af810601:0x3f772af16b1c87e8!2m2!1d3.0402811!2d50.6261636!1m5!1m1!1s0x47c2d573f9c3977d:0x4d7035aa16d8e6f4!2m2!1d3.043153!2d50.6235718!3e2" target="_blank">Cormontaigne</a></p>
+          <p><span class="bold">CITL</span> : <a href="https://www.google.com/maps/dir/Cormontaigne,+Lille/78+Boulevard+Montebello,+Lille/@50.6248694,3.0407142,18z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47c2d571af810601:0x3f772af16b1c87e8!2m2!1d3.0402811!2d50.6261636!1m5!1m1!1s0x47c2d573f9c3977d:0x4d7035aa16d8e6f4!2m2!1d3.043153!2d50.6235718!3e2" target="_blank">Cormontaigne</a></p>
+          <p><span class="bold">L92</span> : <a href="https://www.google.com/maps/dir/Porte+des+Postes,+Lille/78+Boulevard+Montebello,+Lille/@50.6248694,3.0407142,18z/data=!4m14!4m13!1m5!1m1!1s0x47c2d5a01ee4d731:0xe8f44cb3dce02718!2m2!1d3.0500813!2d50.6183131!1m5!1m1!1s0x47c2d573f9c3977d:0x4d7035aa16d8e6f4!2m2!1d3.043153!2d50.6235718!3e2" target="_blank">Porte Des Postes</a></p>
+          <p><span class="bold">910</span> : <a href="https://www.google.com/maps/dir/Porte+des+Postes,+Lille/78+Boulevard+Montebello,+Lille/@50.6248694,3.0407142,18z/data=!4m14!4m13!1m5!1m1!1s0x47c2d5a01ee4d731:0xe8f44cb3dce02718!2m2!1d3.0500813!2d50.6183131!1m5!1m1!1s0x47c2d573f9c3977d:0x4d7035aa16d8e6f4!2m2!1d3.043153!2d50.6235718!3e2" target="_blank">Porte Des Postes</a></p>
+          </div>
+      </article>
+      <article class="block-access">
+        <figure>
+          <img src="img/logo-bike.png" alt="Accès Vélo logo">
+        </figure>
+        <div>
+          <p><a href="https://www.google.com/maps/dir/124+Bd+Montebello,+59000+Lille/78+Bd+Montebello,+59000+Lille/@50.6227379,3.0420867,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47c2d5745e881759:0x39d8bf6953750207!2m2!1d3.0449391!2d50.6217998!1m5!1m1!1s0x47c2d573f9c3977d:0x4d7035aa16d8e6f4!2m2!1d3.043153!2d50.6235718!3e2" target="_blank">124 Boulevard Montebello</a></p>
+          <p><a href="https://www.google.com/maps/dir/28+Pl.+Cormontaigne,+59000+Lille/78+Bd+Montebello,+59000+Lille/@50.6248943,3.0403536,18z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47c2d571b9ff945f:0x532287887b430992!2m2!1d3.0395599!2d50.6262021!1m5!1m1!1s0x47c2d573f9c3977d:0x4d7035aa16d8e6f4!2m2!1d3.043153!2d50.6235718!3e2" target="_blank">28 Place Cormontaigne </a></p>
+          <p><a href="https://www.google.com/maps/dir/Pl.+Barth%C3%A9l%C3%A9my+Dorez,+59000+Lille/78+Bd+Montebello,+59000+Lille/@50.6210887,3.0446225,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47c2d5a01c0018ed:0x19204c838c6cf7d2!2m2!1d3.0504693!2d50.6185015!1m5!1m1!1s0x47c2d573f9c3977d:0x4d7035aa16d8e6f4!2m2!1d3.043153!2d50.6235718!3e2" target="_blank">Place Barthélémy Dorez</a></p>
+        </div>
+      </article>
+      <article class="block-access">
+        <figure>
+          <img src="img/logo-parking.png" alt="Accès Parking logo">
+        </figure>
+        <div>
+          <p> <a href="https://www.google.com/maps/dir/Zenpark+-+Parking+Lille+-+Cormontaigne+-+B%C3%A9ranger,+6+Rue+B%C3%A9ranger,+59800+Lille/78+Bd+Montebello,+59000+Lille/@50.6228947,3.0393457,18z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47c2d5ffd3928457:0xb2d1e808a1bd339b!2m2!1d3.0371624!2d50.622024!1m5!1m1!1s0x47c2d573f9c3977d:0x4d7035aa16d8e6f4!2m2!1d3.043153!2d50.6235718!3e2" target="_blank">Zenpark - Cormontaigne (Rue Béranger)</a></p>
+        </div>
+      </article>
+    </article>
+  </article>
+</section> -->
+
 <footer>
   <section class="footer-content">
     <article>
