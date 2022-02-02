@@ -35,23 +35,6 @@
     background: rgba($color: $secondary-color, $alpha: 0.8);
     border: 0.2em solid $primary-color;
     padding: 2em 0em;
-    margin-top: -1.5em;
-    @include media(tablet) {
-      padding: 1.5em 0em;
-      margin-top: 2em;
-    }
-    @include media(desktop) {
-      padding: 3.5em 0em;
-      margin-top: 2em;
-    }
-    @include media(screen) {
-      padding: 3.5em 0em;
-      margin-top: 4.5em;
-    }
-    @include media(screen) {
-      padding: 3.5em 0em;
-      margin-top: 4.5em;
-    }
     a {
       text-decoration: none;
     }
@@ -60,25 +43,11 @@
 
 .main-logo {
   position: absolute;
-  top: 5.5em;
+  top: -5%;
   z-index: 1;
   max-width: 6em;
-  @include media (desktop) {
-    max-width: 8em;
-    top: 6.5em;
-  }
-  @include media (desktopXL) {
-    top: 5em;
-  }
-  @include media (tv) {
-    top: 16em;
-  }
-  @include media (desktopXL) {
-    top: 5em;
-  }
-  @include media (tv) {
-    top: 16em;
-  }
+  left: 50%; 
+  transform: translate(-50%,0);
   img {
     width: 100%;
     border: 0.2em solid $primary-color;
@@ -87,7 +56,6 @@
     object-fit: cover;
   }
 }
-
 // -----------------------------------------------------------------------------
 // SECOND SECTION
 // -----------------------------------------------------------------------------
