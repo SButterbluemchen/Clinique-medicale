@@ -5,6 +5,7 @@
   div {
     padding: 2em 1.5em;
     border: none;
+    box-shadow: 0em 0em 0.5em rgba(73, 72, 72, 0.541);
   }
 }
 
@@ -176,6 +177,7 @@
 }
 
 .access-container {
+  margin: 2.5em auto;
   @include flex-wrap(wrap, flex-start);
   gap: 1em;
   h4 {
