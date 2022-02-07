@@ -81,31 +81,18 @@
       width: 100%;
       margin-top: 1em;
       object-fit: cover;
+      box-shadow: 0 0 0.5em grey, 0.1em 0.1em 1em 1em white;
     }
   }
   p {
     @include media(tablet) {
-      max-width: 60%;
+      max-width: 50%;
       margin: auto;
+      @include media(desktop) {
+        max-width: 60%;
+      }
     }
   }
-}
-
-.border-test {
-  outline: 0.2em solid $primary-color;
-}
-
-.border-test2 {
-  border: 0.5em solid $secondary-color;
-  outline: 0.2em solid $primary-color;
-}
-
-.border-test3 {
-  box-shadow: 0 0 0.5em grey, 0.1em 0.1em 1em 1em white;
-}
-
-.border-test4 {
-  box-shadow: 0.2em 0.2em 0em $primary-color, -0.2em -0.2em 0em $primary-color;
 }
 
 //add icons
