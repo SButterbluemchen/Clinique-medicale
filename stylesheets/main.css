@@ -1261,32 +1261,21 @@ footer {
   margin-top: 1em;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-@media only screen and (min-width: 600px) {
-  .panel p {
-    max-width: 60%;
-    margin: auto;
-  }
-}
-
-.border-test {
-  outline: 0.2em solid #0063A0;
-}
-
-.border-test2 {
-  border: 0.5em solid #ffffff;
-  outline: 0.2em solid #0063A0;
-}
-
-.border-test3 {
   -webkit-box-shadow: 0 0 0.5em grey, 0.1em 0.1em 1em 1em white;
           box-shadow: 0 0 0.5em grey, 0.1em 0.1em 1em 1em white;
 }
 
-.border-test4 {
-  -webkit-box-shadow: 0.2em 0.2em 0em #0063A0, -0.2em -0.2em 0em #0063A0;
-          box-shadow: 0.2em 0.2em 0em #0063A0, -0.2em -0.2em 0em #0063A0;
+@media only screen and (min-width: 600px) {
+  .panel p {
+    max-width: 50%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 600px) and (min-width: 900px) {
+  .panel p {
+    max-width: 60%;
+  }
 }
 
 .accordion::after {
