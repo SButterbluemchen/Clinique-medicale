@@ -956,7 +956,7 @@ footer {
 }
 
 .home-intro-container article {
-  margin: 1em 0em;
+  margin: 2em 0em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -969,7 +969,7 @@ footer {
 
 @media only screen and (min-width: 900px) {
   .home-intro-container article {
-    gap: 2em;
+    gap: 1.5em;
   }
 }
 
@@ -1004,7 +1004,7 @@ footer {
 
 @media only screen and (min-width: 900px) {
   .home-intro-container article figure {
-    width: 20em;
+    width: 24em;
   }
 }
 
