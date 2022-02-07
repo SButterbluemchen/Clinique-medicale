@@ -17,7 +17,7 @@
         "components/_logo.scss",
         "pages/_home.scss",
         "pages/_cabinet.scss",
-        "pages/_epaule.scss",
+        "pages/_membres.scss",
         "themes/_default.scss"
     ],
     "names": [],
