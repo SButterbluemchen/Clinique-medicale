@@ -46,8 +46,8 @@
   top: -4%;
   z-index: 1;
   max-width: 6em;
-  left: 50%; 
-  transform: translate(-50%,0);
+  left: 50%;
+  transform: translate(-50%, 0);
   img {
     width: 100%;
     border: 0.2em solid $primary-color;
@@ -135,14 +135,14 @@
 }
 
 // -----------------------------------------------------------------------------
-// THIRD SECTION WITH 5 IMAGES
+// THIRD SECTION WITH 6 IMAGES
 // -----------------------------------------------------------------------------
 
 .home-image-wrapper {
   background: $fourth-color;
   text-align: justify;
   margin: 5em -1.5em;
-  padding: 5em 1.5em;
+  padding: 5em 1.5em 7em 1.5em;
   p {
     margin: 1em 0.3em 2em 0.3em;
     @include media(desktop) {
@@ -161,19 +161,13 @@
   justify-items: center;
   figure {
     max-width: 8em;
-    margin: auto;
+    margin: 1em auto 0em auto;
     @include media(tablet) {
       width: 5em;
     }
     img {
       width: 100%;
     }
-  }
-  div h4:nth-of-type(1) {
-    margin-bottom: 0em;
-  }
-  div h4:nth-of-type(2) {
-    margin-top: 0em;
   }
 }
 
