@@ -1081,6 +1081,16 @@ footer {
   justify-items: center;
 }
 
+.home-service-container li {
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.home-service-container li:hover {
+  -webkit-transform: scale(102%);
+          transform: scale(102%);
+}
+
 .home-service-container figure {
   max-width: 8em;
   margin: 1em auto 0em auto;

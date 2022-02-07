@@ -159,6 +159,12 @@
   gap: 3em;
   margin: auto;
   justify-items: center;
+  li {
+    transition: 0.2s ease-in-out;
+    &:hover {
+      transform: scale(102%);
+    }
+  }
   figure {
     max-width: 8em;
     margin: 1em auto 0em auto;
