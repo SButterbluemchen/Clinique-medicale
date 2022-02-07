@@ -70,10 +70,10 @@
     }
   }
   article {
-    margin: 1em 0em;
+    margin: 2em 0em;
     @include flex-wrap(wrap, center);
     @include media(desktop) {
-      gap: 2em;
+      gap: 1.5em;
     }
     div {
       padding: 0.5em 0em;
@@ -94,7 +94,7 @@
     figure {
       width: 21em;
       @include media(desktop) {
-        width: 20em;
+        width: 24em;
       }
       img {
         width: 100%;
