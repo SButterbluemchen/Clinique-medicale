@@ -1138,180 +1138,6 @@ footer {
   border-radius: 100%;
 }
 
-.members-intro {
-  margin: 4em 0em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-@media only screen and (min-width: 900px) {
-  .members-intro {
-    gap: 3em;
-  }
-}
-
-.members-intro article {
-  padding: 0.5em 0em;
-}
-
-@media only screen and (min-width: 900px) {
-  .members-intro article {
-    max-width: 40%;
-  }
-}
-
-.members-intro article h3 {
-  margin: 0.5em 0em;
-}
-
-.members-intro article p {
-  margin: 0.5em 0em;
-}
-
-.members-intro figure {
-  width: 21em;
-}
-
-@media only screen and (min-width: 900px) {
-  .members-intro figure {
-    width: 30em;
-  }
-}
-
-.members-intro figure img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.members-disease-list {
-  margin: 1.5em 0em;
-  list-style: none;
-  text-align: left;
-}
-
-.members-disease-list h5 {
-  text-align: left;
-}
-
-.accordion {
-  background: white;
-  border-bottom: 0.05em solid #0063A0;
-  cursor: pointer;
-  padding: 1em;
-  margin: 0em;
-  width: 100%;
-  outline: none;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-@media only screen and (min-width: 900px) {
-  .accordion {
-    max-width: 70%;
-    margin: auto;
-  }
-  .accordion:hover {
-    color: #ffffff;
-    background: #0063A0;
-  }
-}
-
-.active {
-  color: #ffffff;
-  background: #0063A0;
-}
-
-.panel {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0em 1em;
-  background: #ffffff;
-  overflow: hidden;
-  max-height: 0;
-  -webkit-transition: max-height 0.2s ease-out;
-  transition: max-height 0.2s ease-out;
-}
-
-@media only screen and (min-width: 900px) {
-  .panel {
-    max-width: 70%;
-    margin: auto;
-  }
-}
-
-.panel figure {
-  max-width: 18em;
-}
-
-.panel figure img {
-  width: 100%;
-  margin-top: 1em;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-box-shadow: 0 0 0.5em grey, 0.1em 0.1em 1em 1em white;
-          box-shadow: 0 0 0.5em grey, 0.1em 0.1em 1em 1em white;
-}
-
-@media only screen and (min-width: 600px) {
-  .panel p {
-    max-width: 50%;
-    margin: auto;
-  }
-}
-
-@media only screen and (min-width: 600px) and (min-width: 900px) {
-  .panel p {
-    max-width: 60%;
-  }
-}
-
-.accordion::after {
-  content: "\232A";
-  /* Unicode character for "plus" sign (+) */
-  font-weight: 600;
-  font-size: 1em;
-  color: #0063A0;
-  float: right;
-  margin-left: 0.3em;
-}
-
-.accordion.active:after {
-  content: "\FE40";
-  color: #ffffff;
-}
-
-.members-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .cabinet-main div {
   padding: 2em 1.5em;
   border: none;
@@ -1535,5 +1361,179 @@ footer {
 
 .access-container article div {
   min-width: 12em;
+}
+
+.members-intro {
+  margin: 4em 0em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (min-width: 900px) {
+  .members-intro {
+    gap: 3em;
+  }
+}
+
+.members-intro article {
+  padding: 0.5em 0em;
+}
+
+@media only screen and (min-width: 900px) {
+  .members-intro article {
+    max-width: 40%;
+  }
+}
+
+.members-intro article h3 {
+  margin: 0.5em 0em;
+}
+
+.members-intro article p {
+  margin: 0.5em 0em;
+}
+
+.members-intro figure {
+  width: 21em;
+}
+
+@media only screen and (min-width: 900px) {
+  .members-intro figure {
+    width: 30em;
+  }
+}
+
+.members-intro figure img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.members-disease-list {
+  margin: 1.5em 0em;
+  list-style: none;
+  text-align: left;
+}
+
+.members-disease-list h5 {
+  text-align: left;
+}
+
+.accordion {
+  background: white;
+  border-bottom: 0.05em solid #0063A0;
+  cursor: pointer;
+  padding: 1em;
+  margin: 0em;
+  width: 100%;
+  outline: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+@media only screen and (min-width: 900px) {
+  .accordion {
+    max-width: 70%;
+    margin: auto;
+  }
+  .accordion:hover {
+    color: #ffffff;
+    background: #0063A0;
+  }
+}
+
+.active {
+  color: #ffffff;
+  background: #0063A0;
+}
+
+.panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0em 1em;
+  background: #ffffff;
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+
+@media only screen and (min-width: 900px) {
+  .panel {
+    max-width: 70%;
+    margin: auto;
+  }
+}
+
+.panel figure {
+  max-width: 18em;
+}
+
+.panel figure img {
+  width: 100%;
+  margin-top: 1em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 0 0 0.5em grey, 0.1em 0.1em 1em 1em white;
+          box-shadow: 0 0 0.5em grey, 0.1em 0.1em 1em 1em white;
+}
+
+@media only screen and (min-width: 600px) {
+  .panel p {
+    max-width: 50%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 600px) and (min-width: 900px) {
+  .panel p {
+    max-width: 60%;
+  }
+}
+
+.accordion::after {
+  content: "\232A";
+  /* Unicode character for "plus" sign (+) */
+  font-weight: 600;
+  font-size: 1em;
+  color: #0063A0;
+  float: right;
+  margin-left: 0.3em;
+}
+
+.accordion.active:after {
+  content: "\FE40";
+  color: #ffffff;
+}
+
+.members-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=main.css.map */
