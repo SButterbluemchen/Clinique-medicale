@@ -1334,6 +1334,8 @@ footer {
 .cabinet-main div {
   padding: 2em 1.5em;
   border: none;
+  -webkit-box-shadow: 0em 0em 0.5em rgba(73, 72, 72, 0.541);
+          box-shadow: 0em 0em 0.5em rgba(73, 72, 72, 0.541);
 }
 
 .carousel {
@@ -1522,6 +1524,7 @@ footer {
 }
 
 .access-container {
+  margin: 2.5em auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
