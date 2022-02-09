@@ -1,0 +1,38 @@
+// -----------------------------------------------------------------------------
+// FIRST PART TO CHANGE IN MEMBERS.SCSS .MEMBERS-INTRO
+// -----------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
+// SECOND PART - INDICATEURS
+// -----------------------------------------------------------------------------
+.indications {
+  margin: 3em 0em;
+  @include media(desktop) {
+    margin-left: 10em;
+  }
+  @include media(tv) {
+    margin-left: 30em;
+  }
+  div {
+    @include flex-wrap(wrap, center);
+    @include media(tablet) {
+      @include flex-wrap(wrap, flex-start);
+    }
+    }
+    figure {
+      max-width: 3em;
+      @include media(tablet) {
+        margin-right: 1em;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  ul {
+    max-width: 90%;
+    margin: auto;
+    li {
+      margin: 0em 0em 1em 0em;
+    }
+  }
+}

@@ -1546,4 +1546,67 @@ footer {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.indications {
+  margin: 3em 0em;
+}
+
+@media only screen and (min-width: 900px) {
+  .indications {
+    margin-left: 10em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .indications {
+    margin-left: 30em;
+  }
+}
+
+.indications div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .indications div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.indications figure {
+  max-width: 3em;
+}
+
+@media only screen and (min-width: 600px) {
+  .indications figure {
+    margin-right: 1em;
+  }
+}
+
+.indications figure img {
+  width: 100%;
+}
+
+.indications ul {
+  max-width: 90%;
+  margin: auto;
+}
+
+.indications ul li {
+  margin: 0em 0em 1em 0em;
+}
 /*# sourceMappingURL=main.css.map */
