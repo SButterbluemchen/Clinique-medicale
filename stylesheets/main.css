@@ -1374,7 +1374,7 @@ footer {
 }
 
 .members-intro {
-  margin: 4em 0em;
+  margin: 2em 0em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1388,6 +1388,7 @@ footer {
 @media only screen and (min-width: 900px) {
   .members-intro {
     gap: 3em;
+    margin: 4em 0em;
   }
 }
 
@@ -1411,16 +1412,19 @@ footer {
 
 .members-intro figure {
   width: 21em;
+  height: 18em;
 }
 
 @media only screen and (min-width: 900px) {
   .members-intro figure {
     width: 30em;
+    height: 20em;
   }
 }
 
 .members-intro figure img {
   width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
