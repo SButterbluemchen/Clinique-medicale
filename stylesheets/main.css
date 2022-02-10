@@ -636,12 +636,12 @@ nav a {
 }
 
 .logo img {
-  width: 4em;
+  width: 8em;
 }
 
 @media only screen and (min-width: 900px) {
   .logo img {
-    width: 5em;
+    width: 10em;
   }
 }
 
@@ -1092,7 +1092,7 @@ footer {
 }
 
 .home-service-container figure {
-  max-width: 8em;
+  max-width: 6em;
   margin: 1em auto 0em auto;
 }
 

@@ -1,20 +1,6 @@
 // -----------------------------------------------------------------------------
 // NAV BAR - RESPONSIVE
 // -----------------------------------------------------------------------------
-// .contact-bar {
-//   background: $secondary-color;
-//   @include flex-wrap(nowrap, space-between, center);
-//   list-style-type: none;
-//   height: 3em;
-//   @include headingstyle(semi-light, small);
-//   div {
-//     width: 30%;
-//     @include flex-wrap(nowrap, space-evenly);
-//   }
-//   li {
-//     align-self: center;
-//   }
-// }
 
 nav {
   background: $primary-color;
@@ -113,9 +99,9 @@ nav {
     flex: 1;
   }
   img {
-    width: 4em;
+    width: 8em;
     @include media(desktop) {
-      width: 5em;
+      width: 10em;
     }
   }
 }
