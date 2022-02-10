@@ -1,8 +1,9 @@
 .members-intro {
-  margin: 4em 0em;
+  margin: 2em 0em;
   @include flex-wrap(wrap, center);
   @include media(desktop) {
     gap: 3em;
+    margin: 4em 0em;
   }
   article {
     padding: 0.5em 0em;
@@ -18,11 +19,14 @@
   }
   figure {
     width: 21em;
+    height: 18em;
     @include media(desktop) {
       width: 30em;
+      height: 20em;
     }
     img {
       width: 100%;
+      height: 100%;
       object-fit: cover;
     }
   }
