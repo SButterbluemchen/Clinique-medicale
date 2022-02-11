@@ -599,6 +599,7 @@ nav a {
       -ms-flex-order: 1;
           order: 1;
   font-size: 2em;
+  margin-top: 0.1em;
 }
 
 .toggle img {
@@ -625,6 +626,7 @@ nav a {
 
 .logo {
   padding: 0em;
+  margin-left: -1em;
 }
 
 @media only screen and (min-width: 600px) {
@@ -636,12 +638,12 @@ nav a {
 }
 
 .logo img {
-  width: 8em;
+  width: 7em;
 }
 
 @media only screen and (min-width: 900px) {
   .logo img {
-    width: 10em;
+    width: 9em;
   }
 }
 
@@ -820,7 +822,7 @@ footer {
   transition: 2s ease;
   bottom: 1.5em;
   /* Place the button at the bottom of the page */
-  right: 2em;
+  right: 1.5em;
   /* Place the button 30px from the right */
   z-index: 99;
   /* Make sure it does not overlap */
@@ -1000,17 +1002,19 @@ footer {
 
 .home-intro-container article figure {
   width: 21em;
+  height: 14em;
 }
 
 @media only screen and (min-width: 900px) {
   .home-intro-container article figure {
     width: 24em;
+    height: 20em;
   }
 }
 
 .home-intro-container article figure img {
   width: 100%;
-  max-height: 20em;
+  max-height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
