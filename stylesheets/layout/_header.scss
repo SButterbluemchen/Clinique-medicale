@@ -80,6 +80,7 @@ nav {
 .toggle {
   order: 1;
   font-size: 2em;
+  margin-top: 0.1em;
   img {
     max-width: 1.3em;
   }
@@ -95,13 +96,14 @@ nav {
 
 .logo {
   padding: 0em;
+  margin-left: -1em;
   @include media(tablet) {
     flex: 1;
   }
   img {
-    width: 8em;
+    width: 7em;
     @include media(desktop) {
-      width: 10em;
+      width: 9em;
     }
   }
 }
