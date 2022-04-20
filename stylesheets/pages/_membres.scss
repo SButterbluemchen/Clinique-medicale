@@ -3,15 +3,17 @@
   @include flex-wrap(wrap, center);
   @include media(desktop) {
     gap: 3em;
-    margin: 4em 0em;
+    margin: 4em 0em 2em 0em;
   }
   article {
-    padding: 0.5em 0em;
     @include media(desktop) {
       max-width: 40%;
     }
     h3 {
       margin: 0.5em 0em;
+    }
+    li {
+      margin-inline: 1.5em;
     }
     p {
       margin: 0.5em 0em;
@@ -30,6 +32,33 @@
       object-fit: cover;
     }
   }
+}
+
+.members-specs {
+  margin:auto;
+  padding: 1em 0em;
+  @include media(desktop) {
+    max-width: 75%;
+  }
+  ul {
+    padding: 1em 0em;
+    li {
+      margin-inline: 2em;
+    }
+  }
+}
+
+.indications {
+  @include media(desktop) {
+    max-width: 80%;
+  }
+}
+
+.caption {
+  padding: 1em 0em;
+  font-size: 0.7em;
+  line-height: 1.3em;
+  font-style: italic;
 }
 
 .members-disease-list {
