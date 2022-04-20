@@ -23,6 +23,10 @@
   div {
     margin: 2em auto;
   }
+  .doctolib-main-button {
+    font-weight: 420;
+    font-size: 1.2em;
+  }
 }
 
 .home-main-content {
@@ -65,6 +69,8 @@
     margin: 3em;
   }
   h2 {
+    color: $primary-color;
+    font-weight: 500;
     @include media(desktop) {
       margin: 2em;
     }
@@ -86,6 +92,7 @@
       }
       h4 {
         margin: 0.5em 0em;
+        font-weight: 500;
       }
       p {
         margin: 0.5em 0em;
@@ -192,12 +199,21 @@
     list-style: none;
     h5 {
       font-size: 1.4em;
-      margin-bottom: 0.5em;
       @include headingstyle(normal, h4);
     }
-    p {
-      max-width: 15em;
+    .member-title {
+      font-weight: 500;
+      margin-bottom: 0.3em;
+    }
+    p,
+    ul {
+      max-width: 13em;
       margin: auto;
+      margin-left: 2rem;
+    }
+    li {
+      list-style-type: disc;
+      text-align: left;
     }
     figure {
       max-width: 10em;

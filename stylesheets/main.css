@@ -365,7 +365,7 @@ html {
 @media only screen and (min-width: 900px) {
   html {
     font-size: 2.6em;
-    font-size: 1.95em;
+    font-size: 2.08em;
     font-size: 1.82em;
     font-size: 1.56em;
     font-size: 1.43em;
@@ -422,7 +422,7 @@ h1 {
 
 h2 {
   font-weight: 400;
-  font-size: 1.5em;
+  font-size: 1.6em;
   text-transform: uppercase;
 }
 
@@ -696,7 +696,8 @@ footer {
 
 .phone-number {
   cursor: pointer;
-  text-decoration: underline;
+  text-decoration: underline !important;
+  font-weight: 500;
 }
 
 .copyright {
@@ -730,12 +731,17 @@ footer {
   padding: 0.7em 3em;
   margin: 0.5em;
   display: inline-block;
-  max-width: 18em;
+  max-width: 25em;
   text-align: center;
   transition: 0.2s ease-in-out;
 }
 .btn--filled:hover {
   transform: scale(102%);
+}
+.btn--filled img {
+  width: 4em;
+  margin-left: 0.3em;
+  margin-bottom: -0.2em;
 }
 
 .btn-menu {
@@ -822,6 +828,10 @@ footer {
 .home-main-container div {
   margin: 2em auto;
 }
+.home-main-container .doctolib-main-button {
+  font-weight: 420;
+  font-size: 1.2em;
+}
 
 .home-main-content {
   position: relative;
@@ -863,6 +873,10 @@ footer {
     margin: 3em;
   }
 }
+.home-intro-container h2 {
+  color: #0063A0;
+  font-weight: 500;
+}
 @media only screen and (min-width: 900px) {
   .home-intro-container h2 {
     margin: 2em;
@@ -895,6 +909,7 @@ footer {
 }
 .home-intro-container article div h4 {
   margin: 0.5em 0em;
+  font-weight: 500;
 }
 .home-intro-container article div p {
   margin: 0.5em 0em;
@@ -1001,13 +1016,22 @@ footer {
 }
 .home-team-container li h5 {
   font-size: 1.4em;
-  margin-bottom: 0.5em;
   font-weight: 400;
   font-size: 1.2em;
 }
-.home-team-container li p {
-  max-width: 15em;
+.home-team-container li .member-title {
+  font-weight: 500;
+  margin-bottom: 0.3em;
+}
+.home-team-container li p,
+.home-team-container li ul {
+  max-width: 13em;
   margin: auto;
+  margin-left: 2rem;
+}
+.home-team-container li li {
+  list-style-type: disc;
+  text-align: left;
 }
 .home-team-container li figure {
   max-width: 10em;

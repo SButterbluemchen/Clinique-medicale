@@ -55,7 +55,8 @@ footer {
 
 .phone-number {
   cursor: pointer;
-  text-decoration: underline;
+  text-decoration: underline!important;
+  font-weight: 500;
 }
 
 .copyright {

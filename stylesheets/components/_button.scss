@@ -22,11 +22,16 @@
   padding: 0.7em 3em;
   margin: 0.5em;
   display: inline-block;
-  max-width: 18em;
+  max-width: 25em;
   text-align: center;
   transition: 0.2s ease-in-out;
   &:hover {
     transform: scale(102%);
+  }
+  img {
+    width: 4em;
+    margin-left: 0.3em;
+    margin-bottom: -0.2em;
   }
 }
 
