@@ -37,11 +37,14 @@
 
 .btn-menu {
   border: 0.1em solid $secondary-color;
-  width: 70%;
+  width: 90%;
   text-align: center;
-  margin: 1em 1em;
+  margin: 1em 1em 0em 1em;
   @include media(desktop) {
     display: none;
+  }
+  span {
+    text-decoration: underline;
   }
 }
 

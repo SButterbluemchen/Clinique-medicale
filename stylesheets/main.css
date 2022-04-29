@@ -746,14 +746,17 @@ footer {
 
 .btn-menu {
   border: 0.1em solid #ffffff;
-  width: 70%;
+  width: 90%;
   text-align: center;
-  margin: 1em 1em;
+  margin: 1em 1em 0em 1em;
 }
 @media only screen and (min-width: 900px) {
   .btn-menu {
     display: none;
   }
+}
+.btn-menu span {
+  text-decoration: underline;
 }
 
 #myBtn {
@@ -1342,6 +1345,7 @@ footer {
 .active {
   color: #ffffff;
   background: #0063A0;
+  padding-bottom: 1em;
 }
 
 .panel {
